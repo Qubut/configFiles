@@ -1,0 +1,235 @@
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+# [volume]
+# label=VOL
+# label=♪
+# instance=Master
+# instance=PCM
+# interval=once
+# signal=10
+[miccontrol]
+command=~/.config/i3/scripts/miccontrol
+# label=MIC
+SOURCE=alsa_input.pci-0000_00_1f.3.analog-stereo
+interval=once
+signal=10
+# [microphone]
+# label=
+# interval=5
+# command= ~/.config/i3/scripts/microphone.sh
+# Volume
+[audio]
+# label=
+interval=once
+command=~/.config/i3/scripts/audio1.sh
+signal=12
+color=#f19950
+# Memory usage
+#
+# The type defaults to "mem" if the instance is not specified.
+[memory]
+command=~/.config/i3/scripts/memory
+label= 
+interval=1
+color=#dfe3ee
+# separator=false
+# [memory]
+# command=~/.config/i3/scripts/memory
+# label= 
+# interval=1
+# color=#7ea1a5
+# instance=swap
+# color=#7ea1a5
+# Disk usage
+#
+# The directory defaults to $HOME if the instance is not specified.
+# The script may be called with a optional argument to set the alert
+# (defaults to 10 for 10%).
+[disk-home]
+command=~/.config/i3/scripts/disk
+label= 
+color=#d9534f
+#DIR=$HOME
+#ALERT_LOW=10
+interval=30
+separator=false
+[disk-root]
+command=~/.config/i3/scripts/disk
+label= 
+color=#ffff00
+align=right
+DIR=/
+ALERT_LOW=10
+interval=43200
+# CPU usage
+#
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+[cpu_usage]
+align=center
+label= 
+color=#00ff7f
+command=~/.config/i3/scripts/cpu_usage
+interval=7
+min_width=CPU:100.00%
+T_WARN=50
+T_CRIT=80
+DECIMALS=2
+
+# Temperature
+#
+# Support multiple chips, though lm-sensors.
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+[temperature]
+label= 
+interval=10
+command=~/.config/i3/scripts/temperature
+color=#8caba8
+color=#dcedc1
+#separator=true
+# Network interface monitoring
+#
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+#[iface]
+#label=
+#instance=wlp4s0
+#instance=enp5s0f5
+#color=#00FFFF
+#interval=10
+#separator=true
+#color=#adff00
+# [iface]
+# command=~/.config/i3/scripts/iface
+# IFACE=enp5s0f5
+# IFACE=wlp4s0
+# ADDRESS_FAMILY=inet6
+# color=#adff00
+# label= 
+# interval=10
+# [bandwidth]
+# label= 
+# color=#83d0c9
+# command=~/.config/i3/scripts/bandwidth
+# interval=1
+#INTERFACE=enp5s0f5
+# INLABEL=IN 
+# OUTLABEL=OUT 
+#TREAT_UNKNOWN_AS_UP=0
+# Battery indicator
+#
+# The battery instance defaults to 0.
+[battery]
+# label=⚡
+command=~/.config/i3/scripts/battery
+label=
+instance=1
+interval=20
+color=#11a548
+# Generic media player support
+#
+# This displays "ARTIST - SONG" if a music is playing.
+# Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
+#[mediaplayer]
+#instance=spotify
+#interval=5
+#signal=10
+# OpenVPN support
+#
+# Support multiple VPN, with colors.
+#[openvpn]
+#interval=20
+# Key indicators
+#
+# Add the following bindings to i3 config file:
+#
+[keyindicator]
+command=~/.config/i3/scripts/keyindicator --hide
+#Allowed keys are CAPS and NUM
+KEY=CAPS
+markup=pango
+interval=0
+signal=11
+#TEXT_ON=CapsLockOn
+##EXT_OFF=CapsLockOff
+COLOR_ON=#00FF00
+#COLOR_OFF=#222222
+##BG_COLOR_ON=
+##BG_COLOR_OFF=
+[keyindicator]
+command=~/.config/i3/scripts/keyindicator 
+KEY=NUM
+markup=pango
+interval=0
+signal=11
+#TEXT_ON=NumLockOn
+#TEXT_OFF=NumLockOff
+COLOR_ON=#00FF00
+HIDE_WHEN_OFF=1
+# Miscellaneous
+# Calendar 
+[calendar]
+command=~/.config/i3/scripts/calendar
+interval=1
+LABEL= 
+DATEFMT=+%H:%M:%S  %d/%m/%Y 
+SHORTFMT=+%H:%M:%S
+HEIGHT=180
+WIDTH=220
+color=#f3f4f5
+#[calendar]
+#command=~/.config/i3/scripts/calendar
+#interval=1
+#LABEL= 
+#DATEFMT=+%H:%M:%S
+# SHORTFMT=+%H:%M:%S
+#HEIGHT=180
+#WIDTH=220
+# Date Time
+# [time]
+# label= 
+# command=date '+%d/%m/%Y %H:%M'
+# interval=1
+# Brightness indicator
+[bright]
+align=center
+label=☀
+command=~/.config/i3/bin/bright
+interval=once
+signal=14
+color=#f3f4f5
+
+# [shutdown_menu]
+# full_text=Quit
+# label=
+# command=~/.config/i3/scripts/shutdown_menu
+#FG_COLOR=#bbbbbb
+#BG_COLOR=#111111
+#HLFG_COLOR=#111111
+#HLBG_COLOR=#bbbbbb
+#BORDER_COLOR=#222222
+# ROFI_TEXT=Menu:
+# ROFI_OPTIONS=-theme Arc-Dark -width 11 -location 5 -hide-scrollbar -bw 2
+# LOCATION=5
+#ZENITY_TITLE=Menu
+#ZENITY_TEXT=Action:
+#ZENITY_OPTIONS=--column= --hide-header
+# ENABLE_CONFIRMATIONS=true 
+# LAUNCHER=rofi
+# LOCKSCRIPT=i3lock --color=${BG_COLOR#"#"}
+
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+# [volume 5% pulse]
+# label= 🔊
+# instance=Master
+# interval=5
+# markup=pango
+# signal=12

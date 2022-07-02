@@ -1,0 +1,2506 @@
+0162cefc4952304026cb1f5dab2419d2|file:///home/wat/bin/Programs/maze_builder/maze.py|60|13|v|python
+	choice
+e0fb5438dca0733ab9f5aaf44f5e2367|file:///home/wat/bin/Programs/maze_builder/maze.py|61|20|V|python
+	            neighbor = neighbors[choice]
+7bfdd1ad1b0b7d43538e338fdb79ab52|file:///home/wat/bin/Programs/maze_builder/maze.py|60|20|V|python
+	            neighbor = np.random.choice(a=len(neighbors) - 1, replace=False)
+	            # previous = neighbor
+cbe79121c554e161845eb310e17bc756|file:///home/wat/bin/Programs/maze_builder/maze.py|59|28|V|python
+	            print(neighbors)
+364bdab59c1729942b4cf972d72df44b|file:///home/wat/bin/Programs/maze_builder/maze.py|60|25|V|python
+	            print(choice)
+65d8138ef84d87c7601367a03209ec56|file:///home/wat/bin/Programs/maze_builder/maze.py|58|40|V|python
+	            neighbors = compute_neighbors(self, current, (dimensions))
+	            choice = np.random.choice(a=len(neighbors) - 1, replace=False)
+	            neighbor = neighbors[choice]
+958a4a8a03dc1f7ed948c441894028cd|file:///home/wat/bin/Programs/maze_builder/maze.py|61|33|V|python
+	            # previous = neighbor
+3ffcf01ef7af7d094905086d3a289a52|file:///home/wat/bin/Programs/maze_builder/maze.py|58|40|V|python
+	            neighbors = compute_neighbors(self, current, (dimensions))
+	            choice = np.random.choice(a=len(neighbors) - 1, replace=False)
+	            neighbor = neighbors[choice]
+	            neighboring_wall = neighbor[1]
+432cc545809e7d44990488187771cd06|file:///home/wat/bin/Programs/maze_builder/maze.py|59|1|V|python
+	                neighbors = compute_neighbors(self, current, (dimensions))
+	                choice = np.random.choice(a=len(neighbors) - 1, replace=False)
+	                neighbor = neighbors[choice]
+	                neighboring_wall = neighbor[1]
+d560e5e27597035f056c02863b692d79|file:///home/wat/bin/Programs/maze_builder/maze.py|48|22|V|python
+	            adjacentsadjacents)
+e4f1009c6d5c2ecc1572ceedd3abc94f|file:///home/wat/bin/Programs/maze_builder/maze.py|61|31|V|python
+	                neighboring_wall = neighbor[1]
+7d05bc0f9fa4688c271829909929d8c8|file:///home/wat/bin/Programs/maze_builder/maze.py|35|1|V|python
+	            neighbors = [
+	                ((0, -1), "W"),
+	                ((-1, 0), "N"),
+	                ((0, 1), "E"),
+	                ((1, 0), "S"),
+	            ]
+65e0ce4865dcb839eccdf2c3cfb61cdb|file:///home/wat/bin/Programs/maze_builder/maze.py|33|13|v|python
+	i, j = coord
+	            w, h = dimensions
+	            neighbors = [
+	                ((0, -1), "W"),
+	                ((-1, 0), "N"),
+	                ((0, 1), "E"),
+	                ((1, 0), "S"),
+	            ]
+	            adjacents = []
+	            for point, wall in neighbors:
+	                xx = i + point[0]
+	                yy = j + point[1]
+	                if not xx < 0 and not xx > h and not yy < 0 and not yy > w:
+	                    adjacents.append(((xx, yy), wall))
+	            points = [p[0] for p in self.maze]
+	            for e in adjacents:
+	                if e[0] in points:
+	                    adjacents.remove(e)
+	            return adjacents
+	
+	
+b8b17ab47fd208f66b63dab1ee7acbf0|file:///home/wat/bin/Programs/maze_builder/maze.py|94|23|V|python
+	            points = [p[0] for p in self.maze]
+7992e408745579252cd1bad5144aba97|file:///home/wat/bin/Programs/maze_builder/maze.py|94|23|V|python
+	            for e in adjacents:
+7b75833996e8b8ae03b46c14f5c717a5|file:///home/wat/bin/Programs/maze_builder/maze.py|94|23|V|python
+	                if e[0] in points:
+f9d0840abfb56077ba5daea2c173ff06|file:///home/wat/bin/Programs/maze_builder/maze.py|94|23|V|python
+	                    adjacents.remove(e)
+78ee54aa8f813885fe2fe20d232518b9|file:///home/wat/bin/Programs/maze_builder/maze.py|80|20|v|python
+	point
+b4e2f1b0c2da0196325ab007c4620fab|file:///home/wat/bin/Programs/maze_builder/maze.py|82|25|V|python
+	            adjacents = []
+07d13bfa6a658aca29f167dd106ffd4d|file:///home/wat/bin/Programs/maze_builder/maze.py|87|37|V|python
+	                    adjacents.append(((xx, yy), wall))
+ff15d1feee73f6d7bb06fa630586a372|file:///home/wat/bin/Programs/maze_builder/maze.py|36|17|^v|python
+	(
+	(
+	(
+	(
+6feb0119981a69cfc8876e44e86b06b1|file:///home/wat/bin/Programs/maze_builder/maze.py|42|1|V|python
+	            for e in adjacents:
+	                if  in points:
+	                    adjacents.remove(e)
+3ca99a14154ed16fd726dd5f3f8303d3|file:///home/wat/bin/Programs/maze_builder/maze.py|47|36|V|python
+	        # previous = ((-1, -1), "W")
+43fb1898a72c9f5318ef0de0e225fa23|file:///home/wat/bin/Programs/maze_builder/maze.py|46|28|V|python
+	        neighboring_wall = None
+4b338b75dc6b490457fb4e63eddfee50|file:///home/wat/bin/Programs/maze_builder/maze.py|50|44|V|python
+	                neighbor = neighbors[choice]
+116bce31dadf2bdee065d11ae4de973f|file:///home/wat/bin/Programs/maze_builder/maze.py|11|29|V|python
+	        self.dimensions = n*m
+f412b80e160b69732c123964aae04302|file:///home/wat/bin/Programs/maze_builder/maze.py|94|73|v|python
+	dimensions
+c0efb32ca5bd815eea4a06997a043ad8|file:///home/wat/bin/Programs/maze_builder/maze.py|97|17|v|python
+	self.maze[k],
+c6b2d58724b24886e7c21cc1868d56ac|file:///home/wat/bin/Programs/maze_builder/maze.py|97|23|v|python
+	self.maze[k
+6adf97f83acf6453d4a6a4b1070f3754|file:///home/wat/bin/Programs/maze_builder/maze.py|75|20|v|python
+	None
+92ca0050d29ef4ee0d27566a2774635e|file:///home/wat/bin/Programs/maze_builder/maze.py|38|26|v|python
+	point[0]
+63d67a1cd128fc96ccdf1b068e3eb628|file:///home/wat/bin/Programs/maze_builder/maze.py|39|26|v|python
+	point[1]
+092dd5df133b8e1cdcdc7a7946869891|file:///home/wat/bin/Programs/maze_builder/maze.py|56|20|v|python
+	backtrack.empty()
+7d7ff9b8da737d2173199ce33daedecb|file:///home/wat/bin/Programs/maze_builder/maze.py|56|1|V|python
+	                if :
+	                    break
+7ecbdd1dde001fdd8052f26c6c4b07aa|file:///home/wat/bin/Programs/maze_builder/maze.py|53|20|v|python
+	not neighbors and 
+0bc7837ef998ca8c9055e6e989c529c5|file:///home/wat/bin/Programs/maze_builder/maze.py|61|17|v|python
+	self.grid[current[0], current[1]]
+f05c7677fca367878ff1f27780e1ed9a|file:///home/wat/bin/Programs/maze_builder/maze.py|110|13|^v|python
+	el
+	  
+	el
+	  
+	el
+65583433296072cf21ef5f4996eabeda|file:///home/wat/bin/Programs/maze_builder/maze.py|47|9|V|python
+	        current = i, j
+12e8b2c9dc08b9a575d3acd8cce1048b|file:///home/wat/bin/Programs/maze_builder/maze.py|23|9|V|python
+	        i = np.random.choice(a=self.n - 1)
+3bc50939a679df77519d89a2e94d7f04|file:///home/wat/bin/Programs/maze_builder/maze.py|23|20|v|python
+	np.random.choice(a=self.m - 1)
+	
+bfc54fc23cdae8c408e76c80b6dfd80d|file:///home/wat/bin/Programs/maze_builder/maze.py|23|20|v|python
+	np.random.choice(a=self.m - 1)
+27cf1e36682fb645e2f4943bbe54f7be|file:///home/wat/SKB/Angular/SKB-models/.git/rebase-merge/git-rebase-todo|1|1|v|gitrebase
+	pick
+f45b596f4527f7ba657fec1edaabe07e|file:///home/wat/bin/Programs/maze_builder/maze.py|68|18|v|python
+	range(length)
+1874bdb1f07d5eece62df8cc9473fe0c|file:///home/wat/bin/Programs/maze_builder/maze.py|67|31|V|python
+	        length = len(self.maze)
+643876f7acb291e1a5e91061cdc0497e|file:///home/wat/bin/Programs/maze_builder/maze.py|72|17|v|python
+	self.maze[k]
+873797a03a5fd24217d5c3e70a8cb5a3|file:///home/wat/bin/Programs/maze_builder/maze.py|69|24|V|python
+	                print(v)
+5b2b0baaaebbadbc3c4c891e9c9543b3|file:///home/wat/bin/Programs/maze_builder/maze.py|8|15|^v|python
+	eigh
+	idth
+cb6ac5ba55e55445d857794de0b8c4f3|file:///home/wat/bin/Programs/maze_builder/maze.py|82|33|^v|python
+	, "E": False,
+	, "N": False,
+	, "N": False,
+c6ba5d35f6ee666fbc0a74ece80a9a37|file:///home/wat/bin/Programs/maze_builder/maze.py|84|23|v|python
+	"W": False "E": False,
+c2aa98c2ec388f7ed438833f7d207824|file:///home/wat/bin/Programs/maze_builder/maze.py|83|24|v|python
+	W": 
+c1036d6c36c8520f9fb14ccfde581594|file:///home/wat/bin/Programs/maze_builder/maze.py|83|24|v|python
+	False 
+49ff2cdd57e149e31114ca20a3bb83c3|file:///home/wat/bin/Programs/maze_builder/maze.py|83|24|v|python
+	"N": True
+be79ce646926146c16089918afbd75eb|file:///home/wat/bin/Programs/maze_builder/maze.py|25|19|v|python
+	(np.random.choice(a=self.n - 1), np.random.choice(a=self.m - 1))
+efc8dcea561327c3047b95620bd81390|file:///home/wat/bin/Programs/maze_builder/maze.py|25|18|V|python
+	        current = (np.random.choice(a=self.n - 1), np.random.choice(a=self.m - 1))
+f1c031b554647e95930971262a616938|file:///home/wat/bin/Programs/maze_builder/maze.py|85|1|V|python
+	        i, j = coord
+	        w, h = dimensions
+	        e, f = other
+	        neighbors = [
+	            ((0, -1), "W"),
+	            ((-1, 0), "N"),
+	            ((0, 1), "E"),
+	            ((1, 0), "S"),
+	        ]
+	        if i != e and j != f:
+	            return ((coord), "")
+	        for point, wall in neighbors:
+	            xx = i + point[0]
+	            yy = j + point[1]
+	            if (
+	                not xx < 0
+	                and not xx > h
+	                and not yy < 0
+	                and not yy > w
+	                and xx == e
+	                and yy == f
+	            ):
+	                return ((coord), wall)
+	        return ((coord), "")
+0e8ed91f0ba0253dad42c94d931e5bd8|file:///home/wat/bin/Programs/maze_builder/maze.py|48|1|V|python
+	            i, j = coord
+dc17484027011718add9e165ece55c82|file:///home/wat/bin/Programs/maze_builder/maze.py|48|1|V|python
+	            w, h = dimensions
+bae2221c5dd35b8193e26cd3cdb38c6d|file:///home/wat/bin/Programs/maze_builder/maze.py|48|66|v|python
+	adjacents
+a4aa533b96a8b344b9a5e55b7c6a8589|file:///home/wat/bin/Programs/maze_builder/maze.py|46|15|V|python
+	            adjacents = list(filter(lambda e: not e[0] in self.maze, adjacents))
+5c3dd92055ef873342a623cbd2b73a8e|file:///home/wat/bin/Programs/maze_builder/maze.py|90|39|V|python
+	            neighbor: tuple[int, int] = neighbors[np.random.choice(a=len(neighbors))]
+230a293fdfa0612956256eadcad678ff|file:///home/wat/bin/Programs/maze_builder/maze.py|32|20|V|python
+	            :param coord: tuple of i,j coordinates
+4d881ca5362cb32779c29ceb917b9666|file:///home/wat/bin/Programs/maze_builder/maze.py|32|20|V|python
+	            :param dimensions: tuple of width and height of the matrix
+3f6055af46535f54c848b3c3a131ea7e|file:///home/wat/bin/Programs/maze_builder/maze.py|30|15|V|python
+	            """
+93e7caf7146ecc859b75d90428fb84a4|file:///home/wat/bin/Programs/maze_builder/maze.py|30|67|V|python
+	            computes the adjacent coordinate points of a matrix for a specific point
+7dd0b75e9c55bb1208dc71fbebab9d3f|file:///home/wat/bin/Programs/maze_builder/maze.py|30|67|V|python
+	            :param self: for accessing self.maze and remove already visited neigbors
+d2ae8267a04aba4fbf94770e9d3ced00|file:///home/wat/bin/Programs/maze_builder/maze.py|55|1|V|python
+	            e, f = other
+	            neighbors = [
+	                ((0, -1), "W"),
+	                ((-1, 0), "N"),
+	                ((0, 1), "E"),
+	                ((1, 0), "S"),
+	            ]
+	            if i != e and j != f:
+	                return ((coord), "")
+	            for point, wall in neighbors:
+	                xx = i + point[0]
+	                yy = j + point[1]
+	                if (
+	                    not xx < 0
+	                    and not xx > h
+	                    and not yy < 0
+	                    and not yy > w
+	                    and xx == e
+	                    and yy == f
+	                ):
+	                    return ((coord), wall)
+	            return ((coord), "")
+4c8492674c49ea84dcf35bb404a17c10|file:///home/wat/bin/Programs/maze_builder/maze.py|64|32|V|python
+	            current = compute_neighbors(self, current, dimensions)
+5351dbe88fdd2fbbf00f06c1e33d5d57|file:///home/wat/bin/Programs/maze_builder/maze.py|60|18|V|python
+	        i, j = current
+fa92a9b7c10f94883271d0d6b40bf46b|file:///home/wat/bin/Programs/maze_builder/maze.py|64|49|v|python
+	rrent
+b824de8a5cc1f3fd8ab9966618f3c9bd|file:///home/wat/bin/Programs/maze_builder/maze.py|64|23|V|python
+	            current = compute_neighbors(self, (i, j), dimensions)
+0aad0ac01d4712fa54b7295d6d5d0433|file:///home/wat/bin/Programs/maze_builder/maze.py|25|35|V|python
+	        dimensions = self.w, self.h
+0f19fb166f75de0b7d3ffab4ee436af3|file:///home/wat/bin/Programs/maze_builder/maze.py|28|56|v|python
+	""]:
+a0592adf55d216ad4ac7f1b5cbd46b5d|file:///home/wat/bin/Programs/maze_builder/maze.py|63|1|V|python
+	                self.grid[i, j] = True
+	                neighbor, wall = compute_neighbors(self, (i, j))
+8a2bf1faf6a14c302d9011963cc72151|file:///home/wat/bin/Programs/maze_builder/maze.py|64|1|V|python
+	                backtrack.put(current)
+	                current = neighbor
+c53245a6fb8e51c9d83ae89f7695632e|file:///home/wat/bin/Programs/maze_builder/maze.py|67|17|V|python
+	            self.grid[i, j] = True
+	            neighbor, wall = compute_neighbors(self, (i, j))
+	            backtrack.put(current)
+	            current = neighbor
+4e0ed68db8f7442efdc91b8ce89bc7e2|file:///home/wat/bin/Programs/maze_builder/maze.py|70|13|V|python
+	            backtrack.put(current)
+e713d478f609c0ba869fdce795c61ac7|file:///home/wat/bin/Programs/maze_builder/maze.py|65|13|V|python
+	            current = neighbor
+d74947b74441123b2aad985acf128794|file:///home/wat/bin/Programs/maze_builder/maze.py|74|20|V|python
+	            (i, j) = current = neighbor
+7e6e86acf347d05ead7731665151183e|file:///home/wat/bin/Programs/maze_builder/maze.py|76|1|V|python
+	            if self.grid[i, j]:
+	                neighbors = compute_neighbors(self, (i, j))
+	                neighbor = (
+	                    neighbors[np.random.choice(a=len(neighbors))] if neighbors else None
+	                )
+	                # if it is a dead end
+	                if not neighbors:
+	                    if not backtrack.empty():
+	                        current = backtrack.get()
+	                        continue
+	                    else:
+	                        break
+	                current = neighbor
+	            else:
+	                self.grid[current[0], current[1]] = True
+	                self.maze.append(current)
+	                backtrack.put(current)
+	                self.size -= 1
+f7d125435dfb86e3fdbf3aa491e7f329|file:///home/wat/bin/Programs/maze_builder/maze.py|76|1|V|python
+	        # add walls
+	        curr, nex = None, None
+	        for k, v in enumerate(self.maze):
+	            if v != self.maze[-1]:
+	                curr = v
+	                nex = self.maze[k + 1]
+	                self.maze[k] = self.add_walls(curr, nex, (self.n, self.m))
+	            else:
+	                self.maze[k] = self.add_walls(nex, curr, (self.n, self.m))
+	
+	    def add_walls(self, coord, other, dimensions) -> tuple:
+	        i, j = coord
+	        w, h = dimensions
+	        e, f = other
+	        neighbors = [
+	            ((0, -1), "W"),
+	            ((-1, 0), "N"),
+	            ((0, 1), "E"),
+	            ((1, 0), "S"),
+	        ]
+	        if i != e and j != f:
+	            return ((coord), "")
+	        for point, wall in neighbors:
+	            xx = i + point[0]
+	            yy = j + point[1]
+	            if (
+	                not xx < 0
+	                and not xx > h
+	                and not yy < 0
+	                and not yy > w
+	                and xx == e
+	                and yy == f
+	            ):
+	                return ((coord), wall)
+	        return ((coord), "")
+	
+fe30db47a485a9ac605775dd774baf3c|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f3.md|86|43|V|markdown
+	  bezeichnet die Art des Ansatzes, den der Algorithm vornimmt bei der Lösung eines Problems, wobei verschiedene Ansätze zu der selben Lösung
+	  des Problems führen, wie **Divide and Con
+15300aecec627feb93fee240ee630523|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|25|1|V|markdown
+	pd.read_excel('test.xlsx', index_col=0)
+3a43b4f88325d94022c0efa9c2fa2f5a|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|37|18|v|markdown
+	pandas
+ae1a84b62383349b321f0c7f23a06bb4|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|28|1|V|markdown
+	`````
+	
+	````{glossary}
+573749bf6d7c43247c74b8c319a76410|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|39|1|V|markdown
+	````
+	
+	```{glossary}
+7c9dfbc7aed71b1872a07d22c8e9a2c9|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|31|1|V|markdown
+	pd.shape
+	
+	  Gibt ein Tupel zurück, das die Dimensionalität des DataFrame angibt.
+	```{code-cell}
+	  import pandas as pd
+	  df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
+	  df.shape
+	```
+d5926ce58c3681c8b6c8157502f1026f|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|39|1|V|markdown
+	df.columns
+	
+	  gibt die Spaltenbezeichnungen des angegebenen Dataframe zurück.
+	  ```{code-cell}
+	   import pandas as pd
+	   df = pd.DataFrame({'Weight':[45, 88, 56, 15, 71],
+	                      'Name':['Sam', 'Andrea', 'Alex', 'Robin', 'Kia'],
+	                      'Age':[14, 25, 55, 8, 21]})
+	   index_ = ['Row_1', 'Row_2', 'Row_3', 'Row_4', 'Row_5']
+	   df.index = index_
+	   print(df.columns)
+	  ```
+d8a93ba25bb08f4ee8bdd4ae0541068c|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|55|1|V|markdown
+	df.dtypes
+	
+	  Gibt die Datentypen im DataFrame zurück.
+	  ```{code-cell}
+	    import pandas as pd
+	    df = pd.DataFrame({'float': [1.0],
+	
+	                   'int': [1],
+	
+	                   'datetime': [pd.Timestamp('20180310')],
+	
+	                   'string': ['foo']})
+	    print(df.dtypes)
+	
+	  ```
+8e17840c85ea778f8bd9f38cd36228ae|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|75|1|V|markdown
+	````
+6c3d6e5a20ad7972b8a01aed667c5a5b|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|34|1|V|markdown
+	```{code-cell}
+	  import pandas as pd
+	  df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
+	  df.shape
+	````
+acc8e37415851e342479b34f47c34077|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|46|1|V|markdown
+	  ```{code-cell}
+	   import pandas as pd
+	   df = pd.DataFrame({'Weight':[45, 88, 56, 15, 71],
+	                      'Name':['Sam', 'Andrea', 'Alex', 'Robin', 'Kia'],
+	                      'Age':[14, 25, 55, 8, 21]})
+	   index_ = ['Row_1', 'Row_2', 'Row_3', 'Row_4', 'Row_5']
+	   df.index = index_
+	   print(df.columns)
+	````
+acb523b05142f9f5aadc89216e9e99a3|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|61|1|V|markdown
+	  ```{code-cell}
+	    import pandas as pd
+	    df = pd.DataFrame({'float': [1.0],
+	
+	                   'int': [1],
+	
+	                   'datetime': [pd.Timestamp('20180310')],
+	
+	                   'string': ['foo']})
+	    print(df.dtypes)
+	
+	````
+657607e2f87d36b12115b57a1b31c95f|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f3.md|33|1|V|markdown
+	    Eine Antwortvariable (oder abhängige Variable) ist diejenige Variable, deren Veränderung von anderen Variablen abhängt.
+	
+ab17b88755beeb05db6c6a0d8ed51a26|file:///home/wat/FHLernen/DataScience/ln-s-bdillo.md|2|1|V|markdown
+	Dillon Benjamin s-bdillo, 03411544611
+	=======
+faa7823df2f3b13bfa3e366e77c6d750|file:///home/wat/FHLernen/DataScience/dsci-101-ln/ln-s-aahmed.md|3|1|V|markdown
+	```{glossary}
+	
+	
+	```
+19b904d9ebb639d2591c3e4a9c8ad5d5|file:///home/wat/FHLernen/DataScience/dsci-101-ln/ln-s-aahmed.md|1|3|v|markdown
+	Dillon
+2e6f6433bbe97b20f1f207371a6efb5a|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|1|1|V|markdown
+	---
+	jupytext:
+	  cell_metadata_filter: -all
+	  formats: md:myst
+	  text_representation:
+	    extension: .md
+	    format_name: myst
+	    format_version: 0.13
+	    jupytext_version: 1.11.5
+	kernelspec:
+	  display_name: Python 3 (ipykernel)
+	  language: python
+	  name: python3
+	---
+ff4dee88db82e98f0e0d524d965b9aa7|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|6|1|v|yaml
+	sections
+ecfee9a615105d77e881830e59858cdb|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|18|1|V|markdown
+	````{glossary}
+	
+	pd.read_excel(file_url)
+	  Einlesen einer Excel-Datei in einen Pandas DataFrame.
+	  ```
+	
+	  pd.read_excel('test.xlsx', index_col=0)
+	```
+	
+	````
+	
+	```{glossary}
+	
+	pd.shape
+	  Gibt ein Tupel zurück, das die Dimensionalität des DataFrame angibt.
+	
+	```
+	
+	<!-- ```{code-cell} -->
+	<!--   import pandas as pd -->
+	<!--   df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]}) -->
+	<!--   df.shape -->
+	<!-- ``` -->
+	
+	```{glossary}
+	
+	df.columns
+	  gibt die Spaltenbezeichnungen des angegebenen Dataframe zurück.
+	
+	```
+	
+	<!-- ```{code-cell} -->
+	 <!-- import pandas as pd -->
+	 <!-- df = pd.DataFrame({'Weight':[45, 88, 56, 15, 71], -->
+	
+	                    <!-- 'Name':['Sam', 'Andrea', 'Alex', 'Robin', 'Kia'], -->
+	                    <!-- 'Age':[14, 25, 55, 8, 21]}) -->
+	
+	 <!-- index_ = ['Row_1', 'Row_2', 'Row_3', 'Row_4', 'Row_5'] -->
+	 <!-- df.index = index_ -->
+	 <!-- print(df.columns) -->
+	<!-- ``` -->
+	
+	```{glossary}
+	
+	df.dtypes
+	  Gibt die Datentypen im DataFrame zurück.
+	
+	```
+	
+	<!-- ```{code-cell} -->
+	  <!-- import pandas as pd -->
+	  <!-- df = pd.DataFrame({'float': [1.0], -->
+	
+	                 <!-- 'int': [1], -->
+	
+	                 <!-- 'datetime': [pd.Timestamp('20180310')], -->
+	
+	                 <!-- 'string': ['foo']}) -->
+	
+	  <!-- print(df.dtypes) -->
+	
+	<!-- ``` -->
+	
+	```
+	
+	```
+07e22ff134d9b0a7c5d801114a78543f|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f3.md|18|1|V|markdown
+	```{glossary} mein Glossar
+	
+	Data Science Projekt steps
+	
+	    1. Definition des zu lösenden Geschäftsproblems
+	    2. Sammeln oder Extrahieren vorhandener Daten
+	    3. Analysieren, Visualisieren und Aufbereiten von Daten
+	    4. Training eines Modells, um Muster in Daten zu erkennen und Vorhersagen zu treffen
+	    5. Bewertung der Leistung eines Modells und Durchführung von Verbesserungen
+	    6. Kommunikation und Präsentation von Ergebnissen und gewonnenen Erkenntnissen
+	    7. Einsatz und Pflege eines Modells
+	
+	supervised learning
+	    Überwachtes Lernen bezieht sich auf eine Art von Aufgabe, bei der ein Algorithmus trainiert wird, um Muster auf der Grundlage von Vorwissen zu lernen.
+	
+	outcome (response variable, dependent variable, target)
+	    Eine Antwortvariable (oder abhängige Variable) ist diejenige Variable, deren Veränderung von anderen Variablen abhängt.
+	
+	classification Problem
+	    Es handelt sich um ein überwachtes Lernproblem, bei dem der Trainingsdatensatz aus Daten besteht, die sich auf unabhängige Variablen und Antwortvariablen (Label) beziehen.
+	
+	Feature
+	    ist eine messbare Eigenschaft des Objekts, das Sie zu analysieren versuchen. In Datasets erscheinen Features als Spalten
+	
+	independent variable (Die Prädiktorvariable)
+	    unabhängige Variable wird verwendet, um eine Vorhersage für abhängige Variablen zu treffen.
+	
+	regression problem
+	    Es handelt sich um ein überwachtes Lernproblem, bei dem der Trainingsdatensatz aus Daten besteht, die sich auf unabhängige Variablen und Antwortvariablen beziehen, wobei die Antwortvariablen numerisch sind und können mit unendlichen numerischen Werten belegt werden.
+	
+	unsupervised learning
+	    ist ein Algorithmus, der keine Antwortvariablen benötigt
+	überhaupt nicht benötigt. In diesem Fall lernt das Modell selbständig Muster aus den Daten.
+	
+	clustering
+	    es geht darum, die Datensätze so in eine bestimmte Anzahl von Clustern zu unterteilen, dass die zu einem Cluster gehörenden Datenpunkte ähnliche Merkmale aufweisen.
+	
+	dimensionality reduction
+	    es wird die Anzahl der betrachteten Zufallsvariablen reduziert, indem eine Gruppe von Hauptvariablen ermittelt wird
+	
+	reinforcement learning
+	    ist eine andere Art von Algorithmus, der auf der Grundlage von Rückmeldungen lernt, wie er sich in einer bestimmten
+	Umgebung auf der Grundlage der Rückmeldungen, die er erhält.
+	
+	numeric variable
+	    ist ein Variablentyp, der nur Zahlen hat.
+	
+	text variable
+	    ist ein Variablentyp, der nur Strings hat.
+	
+	Algorithm
+	    ist eine schrittweise Darstellung einer Lösung für ein bestimmtes Problem.
+	
+	Algorithm-type
+	    eine Klassifizierung des Ansatzes, den von dem Algorithmus vorgenommen wird, wobei zwei Algorithmen von untershiedlichen Typen, zwei verschiedene
+	    Ansätze zur Lösung derselben Problem vornehmen, z.B. Merge-Sort (Divide and Conquer) und Lineare Suche (Brute Force)
+	
+	linear regression
+	    Die lineare Regression dient der Vorhersage der Beziehung zwischen zwei Variablen durch Anwendung einer linearen Gleichung auf beobachtete Daten.
+	
+	logistic regression
+	    Die logistische Regression wird verwendet, um die Wahrscheinlichkeit des Eintretens eines binären Ereignisses (z. B. Gewinn/Verlust) zu berechnen.
+	
+	Random Forest
+	    ist ein überwachter Algorithmus für maschinelles Lernen, der aus Entscheidungsbäumen besteht; Random Forest wird sowohl zur Klassifizierung als auch zur Regression verwendet.
+	
+	```
+ae0c58cf87f2287d114de9dbcf452b5c|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|36|1|V|markdown
+	
+	```{glossary}
+	
+a409d2c1d84e32633bc9254d6b487144|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|51|1|V|markdown
+	```{glossary}
+59fcb545c1f0386333534bffbae80725|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|33|1|V|markdown
+	```{code-cell}
+	  import pandas as pd
+	  df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
+	  df.shape
+	```
+307042c6526c497cbb4010f3e422d0c9|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|30|1|V|markdown
+	  ```
+0e2bde27a15ee0039b205fff1f577092|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|29|1|V|markdown
+	pd.shape
+	  Gibt ein Tupel zurück, das die Dimensionalität des DataFrame angibt.
+	
+	{code-cell}`
+	  import pandas as pd
+	  df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
+	  df.shape
+	`
+b4d18dd5ee0d6036c12b02eb6a7189bd|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|22|2|V|markdown
+	  ```py
+	
+	  pd.read_excel('test.xlsx', index_col=0)
+	````
+336514ebb2e14d858ec9942dd5e46f50|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f6.md|33|1|V|markdown
+	|     |     |
+	| --- | --- |
+	| Navigieren | Cursor links \| Cursor rechts \| Cursor auf \| Cursor ab |
+	| Bild auf \| Bild ab |
+	| Map falten; zoomen | Alt-{ Bild auf \| Bild ab \| Pos1 \| Ende } |
+	| Leertaste |
+	| Alt-{ Cursor auf \| Cursor ab } |
+	| Map wechseln | Strg-Shift-Tab |
+	| Suchen; weitersuchen | Strg-G |
+	| Shift-Strg-G |
+0a85bf3f8df559dcbe8f93e5ae496531|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|7|1|V|markdown
+	ACHTUNG: Die vorliegnde Datei enhält englischen Originaltext und eine durch Deepl maschinell angefertigte deutsche Übersetzung von der Website <http://www.datascienceassn.org/content/data-scientists-sometimes-fool-themselves-0>, Autor: Michael Walker. 
+6e05dacf8517d07eb857f5fdce9cf224|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|5|1|V|markdown
+	* On 31 Dec, 2020 By Michael.Walker
+a0bb1d01b2e13f9b8a2e2421576f190e|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|5|1|V|markdown
+	<!-- 
+469015b1fb5db6f2e69b26a28b776c0b|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|4|1|V|markdown
+	* <http://www.datascienceassn.org/content/data-scientists-sometimes-fool-themselves-0>
+dac174fcbc889608abb87726b3cd921e|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|3|1|V|markdown
+	Quelle:
+a2e8f51dfe9a75ff14e62bb290034131|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|111|1|V|markdown
+	Übersetzt 2021-12-13 mit www.DeepL.com/Translator (kostenlose Version)
+	
+	## mehr Terminologie
+	
+	Quelle: <http://www.datascienceassn.org/code-of-conduct.html>
+	
+	
+	<!--
+	
+	(q) "Correlation" means any of a broad class of statistical relationships involving dependence.
+	
+	(r) "Spurious Correlation" means a correlation between two variables that does not result from any direct relation between them but from their relation to other variables.
+	
+	(s) "Causation" means the relationship between cause and effect backed by scientific evidence (e.g. relationship between an event (the cause) and a second event (the effect), where the second event is understood as a consequence of the first).
+	
+	
+	(aa) "Ludic Fallacy" means mistaking the ecological complex real world to the well-posed problems of mathematics and laboratory experiments.
+	
+	(bb) "Iatrogenics" means harm done by the healer, like the doctor doing more harm than good. Generalized Iatrogenics: By extension, applies to the side effects of data scientists, policy makers, researchers and academics.
+	
+	(cc) "Naive Interventionism" means intervention with disregard to iatrogenics. The preference, even obligation, to “do something” over doing nothing. While this instinct can be beneficial in emergency rooms or ancestral environments, it hurts in others in which there is an “expert problem".
+	
+	(dd) "Naive Rationalism" means thinking that the reasons for things are, by default, accessible to you.
+	
+	(ee) “Confidential Information” means information that you create, develop, receive, use or learn in the course of employment as a data scientist for a client, either working directly in-house as an employee of an organization or as an independent professional. It includes information that is not generally known by the public about the client, including client affiliates, employees, customers or other parties with whom the client has a relationship and who have an expectation of confidentiality.
+	
+	(ff) “Agency Problem” means moral hazard and conflict of interest may arise in any relationship where one party is expected to act in another's best interests. The problem is that the agent who is supposed to make the decisions that would best serve the principal is naturally motivated by self-interest, and the agent's own best interests may differ from the principal's best interests. The two parties have different interests and asymmetric information (the agent having more information), such that the principal cannot directly ensure that the agent is always acting in its (the principal's) best interests, particularly when activities that are useful to the principal are costly to the agent, and where elements of what the agent does are costly for the principal to observe. Agents may hide risks and structure relationships so when he is right, he collects large benefits, when he is wrong, others pay the price. These also affect politicians and academics.
+	
+	(gg) “Hammurabi Risk Management” means a builder has more knowledge than the inspector and can hide risks in the foundations.
+	
+	(hh) “Ethical Inversion” means fitting one’s ethics to actions (or profession) rather than the reverse.
+	
+	(ii) “Protagoras Problem” means engaging in consequentially distorting assumptions “ifs” and calling it “science” and “evidence”. The key is sincerity in assumptions.
+	
+	(jj) “Narrative fallacy” means our need to fit a story, or pattern to series of connected or disconnected facts. The statistical application is data mining.
+	
+	(kk) “Narrative discipline” is a discipline that consists in fitting a convincing and well-sounding story to the past. Opposed to experimental discipline. In medicine, epidemiological studies tend to be marred with the narrative fallacy, less so controlled experiments. Controlled experiments are more rigorous, free of cherry picking.
+	
+	(ll) “Rational Optionality” means not being locked into a given program, so one can change his mind as he goes.
+	
+	(mm) “Subtractive knowledge” means you know what is wrong with more certainty than anything else. An application of via negativa.
+	
+	(nn) “Via negativa” is the focus on what something is not, an indirect definition. In action, it is a recipe of what to avoid, what not to do - subtraction not addition, say, in medicine.
+	
+	(oo) “Subtractive prophecy” means predicting the future by removing what is fragile from it, rather than naively adding to it. An application of via negativa.
+	
+	(pp) “Thalesian thinking” focuses on exposure, payoff from decision.
+	
+	(qq) “Aristotelian thinking” focuses on logic, the True-False distinction.
+	
+	(rr) “Neomania” is a love of change for its own sake and forecasts the future by adding, not subtracting.
+	
+	(ss) “Opacity “ means the state or quality of being opaque (not transparent or hard to understand). Some things remain opaque to us, leading to illusions of understanding.
+	
+	(tt) “Mediocristan” is a process dominated by the mediocre, with few extreme successes or failures (say income for a dentist). No single observation can meaningfully affect the aggregate. Also called “thin-tailed” or member of the Gaussian family of distributions.
+	
+	(uu) “Extremistan” is a province where the total can be conceivably impacted by a single observation. Also called “fat-tailed”. Includes the fractal, or power-law family of distributions.
+	
+	-->
+	
+	
+	
+	Übersetzt mit www.DeepL.com/Translator (kostenlose Version), nicht weiter überarbeitet - Übersetzungsprobleme sind also zu erwarten.
+	
+	Quelle: <http://www.datascienceassn.org/code-of-conduct.html>
+d60921970d5402aa7c1ff950019527c5|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|160|1|V|markdown
+	Übersetzt mit www.DeepL.com/Translator (kostenlose Version) - also ggf. Übersetzungsprobleme?!
+41cd899add5a0f2794e10e84760a9d95|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|3|1|V|markdown
+	## EN
+	
+	The easiest person in the world to fool is yourself. Data scientists sometimes fool themselves - in matters trivial and important. Thus, I suggest we acknowledge real or subconscious biases in ourselves, the data, the analysis and group think. It is prudent for data science teams to have both internal and external checks and balances to expose potential biases and better understand objective reality. Here are a few ways data scientists sometimes fool themselves:
+	
+	Confirmation bias: tendency to favor data that confirms beliefs or hypotheses.
+	
+	Naive rationalism bias: thinking that the reasons for things are, by default, accessible to you.
+	
+	Funding - agency bias: intentional or unconscious skewing of data, assumptions and interpretations to favor the interests of the party that financially supports the data science.
+	
+	Data selection bias: skewing selection of data sources to most available, convenient and cost-effective, in contrast to being most valid and relevant for specific study. Data scientists have budget, data source and time limits - and thus may introduce unconscious bias in data sets able to select and those excluded.
+	
+	Cherry picking bias: pointing to individual cases or data that seem to confirm a particular position, while ignoring a significant portion of related cases or data that may contradict that position.
+	
+	Cognitive bias: skewing decisions based on pre-existing cognitive and heuristic factors (e.g., intuition) rather than on data and evidence. Biases in judgment or decision-making can also result from motivation, such as when beliefs are distorted by wishful thinking. Some biases have a variety of cognitive ("cold") or motivational ("hot") explanations.
+	
+	Omitted variable bias: appears in estimates of parameters in a regression analysis when the assumed specification is incorrect, in that it omits an independent variable that should be in the model.
+	
+	Sampling bias: systematic error due to a non-random sample of a population, causing some members of the population to be less likely to be included than others, resulting in a biased sample - skewing the sampling of data sets toward subgroups of the population most relevant to the initial scope of data science project, thereby making it unlikely that you will uncover any meaningful correlations that may apply to other segments.
+	
+	Data dredging bias: using regression techniques that may find correlations in small or some samples - but that may not be statistically significant in the wider population.
+	
+	Projection bias: tendency to assume that most folks think just like us, though there may be no justification for it. Assume that a consensus exists on matters when there may be none or the exaggerated confidence one has when predicting the winner of an election or sports match.
+	
+	Modeling bias: skewing models by starting with a biased set of project assumptions that drive selection of the wrong variables, the wrong data, the wrong algorithms and the wrong metrics of fitness - including overfitting of models to past data without regard for predictive lift and failure to score and iterate models in a timely fashion with fresh observational data.
+	
+	Reporting bias: skewing availability of data, such that observations of a certain kind may be more likely to be reported and consequently used in research.
+	
+	Data snooping bias: misuse of data mining techniques.
+	
+	Exclusion bias: systematic exclusion of certain things.
+	
+	Ingroup bias: tendency to favor one's own group - causes us to overestimate the abilities and values of our immediate group at the expense of others we don't really know.
+	
+	Observation selection bias: data is filtered not only by study design and measurement, but by the necessary precondition that there has to be someone doing a study. In situations where the existence of the observer or the study is correlated with the data observation selection effects occur, and anthropic reasoning is required.
+	
+	Agency problem bias: means moral hazard and conflict of interest may arise in any relationship where one party is expected to act in another's best interests. The problem is that the agent who is supposed to make the decisions that would best serve the principal is naturally motivated by self-interest, and the agent's own best interests may differ from the principal's best interests. The two parties have different interests and asymmetric information (the agent having more information), such that the principal cannot directly ensure that the agent is always acting in its (the principal's) best interests, particularly when activities that are useful to the principal are costly to the agent, and where elements of what the agent does are costly for the principal to observe. Agents may hide risks and structure relationships so when he is right, he collects large benefits, when he is wrong, others pay the price.
+	
+	-->
+	
+	## DE
+	
+	Autor: Michael.Walker, 31 Dec 2020, <http://www.datascienceassn.org/content/data-scientists-sometimes-fool-themselves-0>
+	
+	Übersetzt EN -> DE 2021-12-13 mit www.DeepL.com/Translator (kostenlose Version), mit ganz leichten Überarbeitungen JB
+92a2b5cb9c6906035c2864fa225e1940|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|4|12|v|yaml
+	article
+55f89546eba0eff4ceb3750719055590|file:///home/wat/FHLernen/DataScience/dsci-101-ln/dsci-biases-de.md|67|1|^v|markdown
+	(aa) 
+	
+	(bb) 
+	
+	(cc) 
+	
+	(dd) 
+	
+	(ff) 
+	
+	(gg) 
+	
+	(hh) 
+	
+	(ii) 
+	
+	(jj) 
+	
+	(kk) 
+	
+	(ll) 
+	
+	(mm) 
+	
+	(nn) 
+	
+	(oo) 
+	
+	(pp) 
+	
+	(qq) 
+	
+	(rr) 
+	
+	(ss) 
+	
+	(tt) 
+	
+	(uu) 
+4ab86da61179102afe93f04c73fc5d30|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|14|1|V|yaml
+	  - file: dsci-biases-de.md
+4648b540db99a97db07f70b18004bdc0|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|15|11|v|yaml
+	dsci-biases-de.md
+46fdb99cf0ad19671ef987c72ce70abb|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|15|1|V|yaml
+	  - file: ./5vs.md
+d2b70d9b4d6e2bab9fb97cce0e3c174f|file:///home/wat/FHLernen/DataScience/dsci-101-ln/crisp_dm_and_its_problems.md|90|1|V|markdown
+	                                    </tr>
+4bea8f23a659a55dff8b99adc37a2154|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|95|2|v|markdown
+	       num_legs  num_wings  num_specimen_seen
+	falcon         2          2                 10
+	dog            4          0                  2
+	spider         8          0                  1
+	fish           0          0                  8
+	
+baa3fb7176547a72bb5ed73e59b9d7f6|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|99|1|v|markdown
+	fish      0
+	spider    8
+	falcon    2
+	Name: num_legs, dtype: int64
+7adeb39c43c72e3252a54478294f06c4|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|127|5|v|markdown
+	code-cell
+8591f99f5dd021d1606df5fa4214edf7|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|127|1|V|markdown
+	```{glossary}
+	
+	DataFrame.nunique(axis=0, dropna=True)[source]
+	    Count number of distinct elements in specified axis.
+	    Return Series with number of distinct elements. Can ignore NaN values.
+	
+	```
+	
+	```{code-cell}
+	import pandas as pd
+	df = pd.DataFrame({'A': [4, 5, 6], 'B': [4, 1, 1]})
+	
+	df.nunique()
+	```
+1846abc0f6590dc1955c1c93cc7414e8|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|144|1|V|markdown
+	DataFrame.nunique(axis=0, dropna=True)[source]
+	    Count number of distinct elements in specified axis.
+	    Return Series with number of distinct elements. Can ignore NaN values.
+5b8415c720bc44a368fbb8cf3ef17d5a|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f4.md|151|1|V|markdown
+	df = pd.DataFrame({'A': [4, 5, 6], 'B': [4, 1, 1]})
+	
+	df.nunique()
+f4e0b2d898b9a1bb5f0d3245ab5b5205|file:///home/wat/FHLernen/DataScience/dsci-101-ln/crisp_dm_and_its_problems.md|3|1|V|markdown
+	           <table maxDepth="3" border="1">
+	                                    <tr>
+	                                       <td valign="top" rowspan="10">Business Understanding</td>
+	                                       <td valign="top" rowspan="3">Determine Business Objectives</td>
+	                                       <td valign="top">Background</td>
+	                                       <tr>
+	                                          <td valign="top">Business Objectives</td>
+	                                       </tr>
+	                                       <tr>
+	                                          <td valign="top">Business Success Criteria</td>
+	                                       </tr>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="5">Assess Situation</td>
+	                                       <td valign="top">Inventory of Resources</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Requirements, Assumptions, and Constraints</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Risks and Contingencies</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Terminology</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Costs and Benefits</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="2">Determine Data Mining Goals</td>
+	                                       <td valign="top">Data Mining Goals</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Data Mining Success Criteria</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="4">Data Understanding</td>
+	                                       <td valign="top">Collect Initial Data</td>
+	                                       <td valign="top">Initial Data Collection Report</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Describe Data</td>
+	                                       <td valign="top">Data Description Report</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Explore Data</td>
+	                                       <td valign="top">Data Exploration Report</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Verify Data Quality</td>
+	                                       <td valign="top">Data Quality Report</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="7">Data Preparation</td>
+	                                       <td valign="top">Select Data</td>
+	                                       <td valign="top">Rationale for Inclusion/ Exclusion</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Clean Data</td>
+	                                       <td valign="top">Data Cleaning Report</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="2">Construct Data</td>
+	                                       <td valign="top">Derived Attributes</td>
+	                                    </tr>
+	                                    <tr>
+	                                      <td valign="top">Generated Records</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Integrate Data</td>
+	                                       <td valign="top">Merged Data</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Format Data</td>
+	                                       <td valign="top">Reformatted Data</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Dataset</td>
+	                                       <td valign="top">Dataset Description</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="8">Modeling</td>
+	                                       <td valign="top" rowspan="2">Select Modeling Techniques</td>
+	                                       <td valign="top">Modeling Technique</td>
+	                                       <tr>
+	                                          <td valign="top">Modeling Assumptions</td>
+	                                       </tr>
+	                                    <tr>
+	                                       <td valign="top">Generate Test Design</td>
+	                                       <td valign="top">Test Design</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="3">Build Model</td>
+	                                       <td valign="top">Parameter Settings</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Models</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Model Descriptions</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="2">Assess Model</td>
+	                                       <td valign="top">Model Assessment</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Revised Parameter Settings</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="5">Evaluation</td>
+	                                       <td valign="top" rowspan="2">Evaluate Results</td>
+	                                       <td valign="top">Assessment of Data Mining Results w.r.t. Business Success Criteria</td>
+	                                       <tr>
+	                                          <td valign="top">Approved Models</td>
+	                                       </tr>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Review Process</td>
+	                                       <td valign="top">Review of Process</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="2">Determine Next Steps</td>
+	                                       <td valign="top">List of Possible Actions</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Decision</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="5">Deployment</td>
+	                                       <td valign="top">Plan Deployment</td>
+	                                       <td valign="top">Deployment Plan</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Plan Monitoring and Maintenance</td>
+	                                       <td valign="top">Monitoring and Maintenance Plan</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top" rowspan="2">Produce Final Report</td>
+	                                       <td valign="top">Final Report</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Final Presentation</td>
+	                                    </tr>
+	                                    <tr>
+	                                       <td valign="top">Review Project</td>
+	                                       <td valign="top">Experience Documentation</td>
+	                                    </tr>
+	                                 </table>
+ab3cdd1eb3579bfd0ee08c7ab141157e|file:///home/wat/FHLernen/DataScience/dsci-101-ln/crisp_dm_and_its_problems.md|3|1|^v|markdown
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+	                                
+7b6bf4f82709913ce027ee68c99fee78|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|5|7|v|yaml
+	ln-s-aahmed
+12405d5f3b0f0ca13b77e8cbaede4678|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|9|1|V|yaml
+	  - file: f3.md
+56b61abd98e0f5ea3e43933253679aa7|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f8.md|3|14|v|markdown
+	https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-319-66923-6_26/MediaObjects/456370_1_En_26_Fig4_HTML.gif
+30f6b72042805a4a97305e6f30d21eb7|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|17|11|v|yaml
+	crisp_dm_and_its_problems.md
+dedca605d4abf785abb05299f57754e7|file:///home/wat/FHLernen/DataScience/dsci-101-ln/_toc.yml|17|11|v|yaml
+	KI_und_Diskriminierung_SusanneBeck20219.html
+4df772e6789db38e1ef7fd4026b3179e|file:///home/wat/FHLernen/DataScience/dsci-101-ln/ki.md|20|1|V|markdown
+	
+	<ul><li><a name="ID_1122552229"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Quelle:</pre>
+	
+	<ul><li><a name="ID_1391630921"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Susanne Beck et al.: K&uuml;nstliche Intelligenz und
+	Diskriminierung &ndash; Whitepaper aus der Plattform
+	Lernende Systeme, M&uuml;nchen 2019.</pre>
+	
+	</li></ul>
+	<ul><li><a name="ID_541324519"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">https://www.plattform-lernende-systeme.de/publikationen-details/kuenstliche-intelligenz-und-diskriminierung-herausforderungen-und-loesungsansaetze.html?file=files/Downloads/Publikationen/AG3_Whitepaper_250619.pdf</pre>
+	
+	</li></ul>
+	<ul><li><a name="ID_314847506"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Autorinnen und Autoren</pre>
+	
+	<ul><li><a name="ID_884578428"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Prof. Dr. Susanne Beck, Leibniz Universit&auml;t Hannover</pre>
+	
+	</li></ul>
+	<ul><li><a name="ID_1350454298"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Dr. Armin Grunwald, Karlsruher Institut f&uuml;r Technologie (KIT)</pre>
+	
+	</li></ul>
+	<ul><li><a name="ID_1713629897"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Kai Jacob, SAP</pre>
+	
+	</li></ul>
+	<ul><li><a name="ID_285351004"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Prof. Dr. Tobias Matzner, Universit&auml;t Paderborn</pre>
+	
+	</li></ul>
+	</li></ul>
+	</li></ul>
+	<ul><li><a name="ID_1104278188"></a><pre style="color:#000000;font-family:sansserif;font-size:10;">Inhalt</pre>
+	
+cf6b9de4547d5f761e94a8eb746e03b7|file:///home/wat/FHLernen/DataScience/dsci-101-ln/ki.md|289|1|V|markdown
+	<p class="info">KI_und_Diskriminierung_
+	SusanneBeck20219.mm//mm2html.xsl FreeplaneVersion:freeplane 1.9.8</p></body></html>
+6ea41cd98711bdcae905475983221114|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f8.md|7|1|v|markdown
+	Volume
+	   It refers to the size of Big Data. Data can be considered Big Data or not is based on the volume. The rapidly increasing volume data is due to cloud-computing traffic, IoT, mobile traffic etc.
+	Data growth prediction
+	
+	Velocity
+	   It refers to the speed at which the data is getting accumulated. This is mainly due to IoTs, mobile data, social media etc.
+	   In the year 2000, Google was receiving 32.8 million searches per day. As for 2018, Google was receiving 5.6 billion searches per day!
+	   Approximate monthly active users as of 2018:
+	   Facebook: 2.41 billion
+	   Instagram: 1 billion
+	   Twitter: 320 million
+	   LinkedIn: 575 million
+	   Facebook monthly active users growth since 2008
+	
+	Variety
+	   It refers to Structured, Semi-structured and Unstructured data due to different sources of data generated either by humans or by machines.
+	   Structured data: It’s the traditional data which is organized and conforms to the formal structure of data. This data can be stored in a relational database. Example: Bank statement containing date, time, amount etc.
+	   Semi-structured data: It’s semi-organized data. It doesn’t conform to the formal structure of data. Example: Log files, JSON files, Sensor data, csv files etc.
+	   Unstructured data: It’s not an organized data and doesn’t fit into rows and columns structure of a relational database. Example: Text files, Emails, images, videos, voicemails, audio files etc.
+	
+	Veracity
+	   It refers to the assurance of quality/integrity/credibility/accuracy of the data. Since the data is collected from multiple sources, we need to check the data for accuracy before using it for business insights.
+	
+	Value
+	   Just because we collected lots of Data, it’s of no value unless we garner some insights out of it. Value refers to how useful the data is in decision making. We need to extract the value of the Big Data using proper analytics.
+	   What are the other V’s?
+	
+	Viscosity
+	   complexity or degree of correlation
+	
+	Variability
+	   inconsistency in data flow
+	
+	Volatility
+	   durability or how long time data is valid and how long it should be stored
+	
+	Viability
+	   capability to be live and active
+	
+	Validity
+	   understandable to find the hidden relationships.
+	
+f842af8fb767147253d5cb50d7fd7b4b|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f8.md|10|1|v|markdown
+	Geschwindigkeit
+92857b2f203fcf89a15b0548ef42c6d4|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f8.md|18|1|v|markdown
+	Wahrhaftigkeit
+de687d9568c15a88c67b02a6e6ce4897|file:///home/wat/FHLernen/DataScience/dsci-101-ln/f8.md|41|1|V|markdown
+	Übersetzt mit www.DeepL.com/Translator (kostenlose Version)
+	Volume
+	   It refers to the size of Big Data. Data can be considered Big Data or not is based on the volume. The rapidly increasing volume data is due to cloud-computing traffic, IoT, mobile traffic etc.
+	Data growth prediction
+	
+	Velocity
+	   It refers to the speed at which the data is getting accumulated. This is mainly due to IoTs, mobile data, social media etc.
+	   In the year 2000, Google was receiving 32.8 million searches per day. As for 2018, Google was receiving 5.6 billion searches per day!
+	   Approximate monthly active users as of 2018:
+	   Facebook: 2.41 billion
+	   Instagram: 1 billion
+	   Twitter: 320 million
+	   LinkedIn: 575 million
+	   Facebook monthly active users growth since 2008
+	
+	Variety
+	   It refers to Structured, Semi-structured and Unstructured data due to different sources of data generated either by humans or by machines.
+	   Structured data: It’s the traditional data which is organized and conforms to the formal structure of data. This data can be stored in a relational database. Example: Bank statement containing date, time, amount etc.
+	   Semi-structured data: It’s semi-organized data. It doesn’t conform to the formal structure of data. Example: Log files, JSON files, Sensor data, csv files etc.
+	   Unstructured data: It’s not an organized data and doesn’t fit into rows and columns structure of a relational database. Example: Text files, Emails, images, videos, voicemails, audio files etc.
+	
+	Veracity
+	   It refers to the assurance of quality/integrity/credibility/accuracy of the data. Since the data is collected from multiple sources, we need to check the data for accuracy before using it for business insights.
+	
+	Value
+	   Just because we collected lots of Data, it’s of no value unless we garner some insights out of it. Value refers to how useful the data is in decision making. We need to extract the value of the Big Data using proper analytics.
+	   What are the other V’s?
+	
+	Viscosity
+	   complexity or degree of correlation
+	
+	Variability
+	   inconsistency in data flow
+	
+	Volatility
+	   durability or how long time data is valid and how long it should be stored
+	
+	Viability
+	   capability to be live and active
+	
+	Validity
+	   understandable to find the hidden relationships.
+5bf42dfc66ee84e267f89718f3c55974|file:///home/wat/bin/Programs/ki/markdown.md|2|1|V|markdown
+	
+	Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
+	in regular markdown files (`.md`), you'll write in the same flavor of markdown
+	called **MyST Markdown**.
+	
+	## What is MyST?
+	
+	MyST stands for "Markedly Structured Text". It
+	is a slight variation on a flavor of markdown called "CommonMark" markdown,
+	with small syntax extensions to allow you to write **roles** and **directives**
+	in the Sphinx ecosystem.
+	
+	## What are roles and directives?
+	
+	Roles and directives are two of the most powerful tools in Jupyter Book. They
+	are kind of like functions, but written in a markup language. They both
+	serve a similar purpose, but **roles are written in one line**, whereas
+	**directives span many lines**. They both accept different kinds of inputs,
+	and what they do with those inputs depends on the specific role or directive
+	that is being called.
+	
+	### Using a directive
+	
+	At its simplest, you can insert a directive into your book's content like so:
+	
+	````
+	```{mydirectivename}
+	My directive content
+	```
+	````
+	
+	This will only work if a directive with name `mydirectivename` already exists
+	(which it doesn't). There are many pre-defined directives associated with
+	Jupyter Book. For example, to insert a note box into your content, you can
+	use the following directive:
+	
+	````
+	```{note}
+	Here is a note
+	```
+	````
+	
+	This results in:
+	
+	```{note}
+	Here is a note
+	```
+	
+	In your built book.
+	
+	For more information on writing directives, see the
+	[MyST documentation](https://myst-parser.readthedocs.io/).
+	
+	
+	### Using a role
+	
+	Roles are very similar to directives, but they are less-complex and written
+	entirely on one line. You can insert a role into your book's content with
+	this pattern:
+	
+	```
+	Some content {rolename}`and here is my role's content!`
+	```
+	
+	Again, roles will only work if `rolename` is a valid role's name. For example,
+	the `doc` role can be used to refer to another page in your book. You can
+	refer directly to another page by its relative path. For example, the
+	role syntax `` {doc}`intro` `` will result in: {doc}`intro`.
+	
+	For more information on writing roles, see the
+	[MyST documentation](https://myst-parser.readthedocs.io/).
+	
+	
+	### Adding a citation
+	
+	You can also cite references that are stored in a `bibtex` file. For example,
+	the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
+	this: {cite}`holdgraf_evidence_2014`.
+	
+	Moreover, you can insert a bibliography into your page with this syntax:
+	The `{bibliography}` directive must be used for all the `{cite}` roles to
+	render properly.
+	For example, if the references for your book are stored in `references.bib`,
+	then the bibliography is inserted with:
+	
+	````
+	```{bibliography}
+	```
+	````
+	
+	Resulting in a rendered bibliography that looks like:
+	
+	```{bibliography}
+	```
+	
+	
+	### Executing code in your markdown files
+	
+	If you'd like to include computational content inside these markdown files,
+	you can use MyST Markdown to define cells that will be executed when your
+	book is built. Jupyter Book uses *jupytext* to do this.
+	
+	First, add Jupytext metadata to the file. For example, to add Jupytext metadata
+	to this markdown page, run this command:
+	
+	```
+	jupyter-book myst init markdown.md
+	```
+	
+	Once a markdown file has Jupytext metadata in it, you can add the following
+	directive to run the code at build time:
+	
+	````
+	```{code-cell}
+	print("Here is some code to execute")
+	```
+	````
+	
+	When your book is built, the contents of any `{code-cell}` blocks will be
+	executed with your default Jupyter kernel, and their outputs will be displayed
+	in-line with the rest of your content.
+	
+	For more information about executing computational content with Jupyter Book,
+	see [The MyST-NB documentation](https://myst-nb.readthedocs.io/).
+988a6235239b9bd5824d9ff9b7aba12d|file:///home/wat/bin/Programs/ki/markdown.md|1|1|V|markdown
+	# Markdown Files
+0b4b633f3b914e8a7c656928816d01fb|file:///home/wat/bin/Programs/ki/_toc.yml|5|7|v|yaml
+	intro
+06a931cc002875a160d4d7054344b093|file:///home/wat/bin/Programs/ki/_toc.yml|8|17|V|yaml
+	- file: notebooks
+378c2e65b576318b7f785b537c424464|file:///home/wat/bin/Programs/ki/_toc.yml|6|1|v|yaml
+	chapters
+e70c420accb5f9a7761eda2051658572|file:///home/wat/test.py|6|1|V|python
+	help(range)
+c6b24dcc7eee280215d3ac1027a3b5d1|file:///home/wat/test.py|8|18|V|python
+	    def __doc__():
+7bd4c63ba2cdadb060f5730e7bf66a30|file:///home/wat/test.py|25|11|v|python
+	[1,2,3,4]
+c46dc5b8c0d132b77524ce4ee3f80336|file:///home/wat/coo.txt|59|8|v|text
+	65babda20ff7ac5f9e0d1130577cab6f7729400c
+d83bb37e90ba398f4485451be048efdd|file:///home/wat/coo.txt|53|8|v|text
+	24ffeb241bfab97236da9c5638b5974872ad0e7f
+ebfb107b9b0bd14e6efea69890749f6d|file:///home/wat/coo.txt|47|8|v|text
+	e4614421e08cbd7247e0076e507a437e04047ac8
+5be1aa8858cba92b4e4e97a4a2d9a5fd|file:///home/wat/coo.txt|40|8|v|text
+	098821dc21585f9018367836dce6026bc7436392
+91f2e681ffca6be852f6d87179d73d4a|file:///home/wat/coo.txt|34|8|v|text
+	b6ccd3563059c3ff6ba287014dacf79de3abaa4a
+	
+89afa46e0247b41ff4812c3787786c13|file:///home/wat/.gitconfig|3|10|v|gitconfig
+	83862978
+02b42a24e5435f1d681cc8b23ee1141a|file:///home/wat/.gitconfig|3|9|v|gitconfig
+	 +Qubut@users.noreply.github.com
+c69230cf7a25a66fc5015526a252f4b2|file:///home/wat/.zshenv|38|1|V|zsh
+	"$XDG_CONFIG_HOME"/vim/vimrc
+b808771e596e9cf0c638c458ff9c34e2|file:///home/wat/.zshenv|45|1|V|zsh
+	let g:netrw_home=$XDG_DATA_HOME."/vim"
+f9f2724fcc588c86c12fcc60a734b090|file:///home/wat/.zshenv|38|1|V|zsh
+	set runtimepath^=$XDG_CONFIG_HOME/vim
+	set runtimepath+=$XDG_DATA_HOME/vim
+	set runtimepath+=$XDG_CONFIG_HOME/vim/after
+	
+	set packpath^=$XDG_DATA_HOME/vim,$XDG_CONFIG_HOME/vim
+	set packpath+=$XDG_CONFIG_HOME/vim/after,$XDG_DATA_HOME/vim/after
+	
+	let g:netrw_home = $XDG_DATA_HOME."/vim"
+	call mkdir($XDG_DATA_HOME."/vim/spell", 'p')
+	set viewdir=$XDG_DATA_HOME/vim/view | call mkdir(&viewdir, 'p')
+	
+	set backupdir=$XDG_CACHE_HOME/vim/backup | call mkdir(&backupdir, 'p')
+	set directory=$XDG_CACHE_HOME/vim/swap   | call mkdir(&directory, 'p')
+	set undodir=$XDG_CACHE_HOME/vim/undo     | call mkdir(&undodir,   'p')
+	
+	if !has('nvim') | set viminfofile=$XDG_STATE_HOME/vim/viminfo | endif
+c2c4eff09ca6906645f828b2334e0c1c|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set runtimepath^=$XDG_CONFIG_HOME/vim
+f9e2b5cfa9a2b697a41e9fd4c554012d|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set runtimepath+=$XDG_DATA_HOME/vim
+8703d046f3bff444231ae96d09ff6468|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set runtimepath+=$XDG_CONFIG_HOME/vim/after
+474bf81c5f69e7355b8d7a563d599a09|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set packpath^=$XDG_DATA_HOME/vim,$XDG_CONFIG_HOME/vim
+0386fd34289358f8c651cc6be811fc3f|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set packpath+=$XDG_CONFIG_HOME/vim/after,$XDG_DATA_HOME/vim/after
+f7cbc03b785bb855f1a0bd56669e80cf|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	let g:netrw_home = $XDG_DATA_HOME."/vim"
+9ebc155ee51ea95103c0e3961cad4770|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	call mkdir($XDG_DATA_HOME."/vim/spell", 'p')
+16e7da1a2ec6c1668189f66859cd0554|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set viewdir=$XDG_DATA_HOME/vim/view | call mkdir(&viewdir, 'p')
+17938cda99b1ee0be19b7b1292e42403|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set backupdir=$XDG_CACHE_HOME/vim/backup | call mkdir(&backupdir, 'p')
+cc6f4f99a9322e5f1315e85b8c4444e8|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set directory=$XDG_CACHE_HOME/vim/swap   | call mkdir(&directory, 'p')
+5f1504d7a8898535a168f2b9a9ae0893|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	set undodir=$XDG_CACHE_HOME/vim/undo     | call mkdir(&undodir,   'p')
+020778f6c264fbc7b698eb0419c57e0c|file:///home/wat/.config/vim/vimrc|18|1|V|vim
+	if !has('nvim') | set viminfofile=$XDG_STATE_HOME/vim/viminfo | endif
+8ba5cb0159426653c894e117fe3a2b37|file:///home/wat/.zshenv|38|55|V|zsh
+	[ -z "$NVM_DIR" ] && export NVM_DIR="$XDG_DATA_HOME"/nvm 
+3b251e2fce5ab56d60e33452b6c8eab5|file:///home/wat/.zshenv|7|1|V|zsh
+	export TERMINAL=/usr/bin/kitty
+34a830733314ad7bcff3ca546d782531|file:///home/wat/.zshenv|37|1|V|zsh
+	source /usr/share/nvm/nvm.sh
+	source /usr/share/nvm/bash_completion
+	source /usr/share/nvm/install-nvm-exec
+8bcc662884af02546f7e578e129d6832|file:///home/wat/.zshenv|38|1|V|zsh
+	[ -z "$NVM_DIR" ] && export NVM_DIR="$XDG_DATA_HOME"/nvm --no-use
+6d0c9871fe96b431adec5266892811fa|file:///home/wat/.config/zsh/zshrc|1|1|V|zsh
+	# some useful config
+	unsetopt BEEP
+	setopt interactive_comments
+	# Useful Functions
+	source "$ZDOTDIR/zsh-functions"
+	# Normal files to source
+	zsh_add_file "zsh-vim-mode"
+	zsh_add_file "zsh-aliases"
+	zsh_add_file "zsh-prompt"
+	export TERMINAL=/usr/bin/kitty
+	source /usr/share/nvm/nvm.sh
+	source /usr/share/nvm/bash_completion
+	source /usr/share/nvm/install-nvm-exec
+	[ -z "$NVM_DIR" ] && export NVM_DIR="$XDG_DATA_HOME"/nvm --no-use
+c555a3361772a6ce3ac9987fd9dbb17e|file:///home/wat/.config/zsh/zsh-aliases|58|1|V|zsh
+	    G is short for git.
+a932e8769f4679def0c47ab2797904ce|file:///home/wat/.config/zsh/zsh-aliases|63|1|v|zsh
+	alias 
+ce66badb410df00522808e805ca21f89|file:///home/wat/.config/zsh/zsh-aliases|67|4|V|zsh
+	    Gbm renames a branch.
+e9ff7e55d573d25167919903878645ab|file:///home/wat/.config/zsh/zsh-aliases|67|4|V|zsh
+	    GbM renames a branch even if the new branch name already exists.
+d76e8b1ea974f659950dc63d6c2548fa|file:///home/wat/.config/zsh/zsh-aliases|71|5|V|zsh
+	    Gbx deletes a branch.
+533ee223439a99522ef72f163fd1354a|file:///home/wat/.config/zsh/zsh-aliases|71|5|V|zsh
+	    GbX deletes a branch irrespective of its merged status.
+7feac9b2fe6dfb62bb3dde3b15ff0118|file:///home/wat/.config/zsh/zsh-aliases|70|1|V|zsh
+	    GbG deletes all local branches tracking remote branches that are gone.
+d24a951b1bc9bb5e6d021ad0a85adf09|file:///home/wat/.config/zsh/zsh-aliases|69|1|V|zsh
+	    Gbu unsets the remote-tracking information for the current or given branch.
+0a56b715d1d842e1a36b34b69ea6b05d|file:///home/wat/.config/zsh/zsh-aliases|76|3|V|zsh
+	    Gco checks out a branch or paths to the working tree.
+	    GcO checks out hunks from the index or the tree interactively.
+	    Gcf amends the tip of the current branch reusing the same log message as HEAD.
+	    GcF amends the tip of the current branch.
+	    Gcp applies changes introduced by existing commits.
+	    GcP applies changes introduced by existing commits without committing.
+	    Gcr reverts existing commits by reverting patches and recording new commits.
+	    GcR removes the HEAD commit.
+	    Gcs shows one or more objects (blobs, trees, tags and commits).
+	    GcS commits with GPG signature.
+	    Gcu commits with fixup message using given commit.
+	    GcU commits with squash message using given commit.
+	    Gcv verifies the GPG signature of commits.
+	
+	Conflict
+	
+	    GCl lists unmerged files.
+	    GCa adds unmerged file contents to the index.
+	    GCe executes merge-tool on all unmerged files.
+	    GCo checks out our changes for unmerged paths.
+	    GCO checks out our changes for all unmerged paths.
+	    GCt checks out their changes for unmerged paths.
+	    GCT checks out their changes for all unmerged paths.
+	
+	Data
+	
+	    Gd displays information about files in the index and the work tree.
+	    Gdc lists cached files.
+	    Gdx lists deleted files.
+	    Gdm lists modified files.
+	    Gdu lists untracked files.
+	    Gdk lists killed files.
+	    Gdi lists ignored files.
+	
+	Fetch
+	
+	    Gf downloads objects and references from another repository.
+	    Gfc clones a repository into a new directory.
+	    Gfm fetches from and merges with another repository or local branch.
+	    Gfr fetches from and rebases on top of another repository or local branch.
+	    Gfu prunes stale remote-tracking branches, fetches all remotes and merges.
+56f1fffdfb3994d6bd3f3eb500d3bb51|file:///home/wat/.config/zsh/.zshrc|131|1|V|zsh
+	# some useful config
+	unsetopt BEEP
+	setopt interactive_comments
+	# Useful Functions
+	source "$ZDOTDIR/zsh-functions"
+	# Normal files to source
+	zsh_add_file "zsh-vim-mode"
+	zsh_add_file "zsh-aliases"
+	# zsh_add_file "zsh-prompt"
+	export TERMINAL=/usr/bin/kitty
+	source /usr/share/nvm/nvm.sh
+	source /usr/share/nvm/bash_completion
+	source /usr/share/nvm/install-nvm-exec
+	[ -z "$NVM_DIR" ] && export NVM_DIR="$XDG_DATA_HOME"/nvm --no-use
+f37d06e6ac7d63e4757e23979eba19b7|file:///home/wat/.config/alacritty/alacritty.yml|111|1|v|yaml
+	background_opacity
+d229bbf31eaeebc7c88897732d8b932d|file:///home/wat/.config/alacritty/alacritty.yml|111|1|v|yaml
+	background
+770ad06882d2ee0872ae62d9996db4e5|file:///home/wat/.config/zsh/.zim/init.zsh|6|1|V|zsh
+	source /home/wat/.config/zsh/.zim/modules/environment/init.zsh
+	source /home/wat/.config/zsh/.zim/modules/termtitle/init.zsh
+	source /home/wat/.config/zsh/.zim/modules/utility/init.zsh
+136432e3554f3727a21e62c83a4dd9bd|file:///home/wat/.config/zsh/.zim/init.zsh|10|53|V|zsh
+	source /home/wat/.config/zsh/.zim/modules/sorin/sorin.zsh-theme
+1c4976a350e369cb4a280981c3197f46|file:///home/wat/.config/zsh/.zim/init.zsh|1|10|V|zsh
+	zimfw() { source /home/wat/.config/zsh/.zim/zimfw.zsh "${@}" }
+ec44a12232c96445ed616caecfffea31|file:///home/wat/.config/zsh/.zim/init.zsh|1|10|V|zsh
+	zmodule() { source /home/wat/.config/zsh/.zim/zimfw.zsh "${@}" }
+e347e6e4109dc89881bc2230fb7aeab2|file:///home/wat/.config/zsh/.zim/init.zsh|2|16|V|zsh
+	fpath=(${_zim_fpath} ${fpath})
+fe35673691c8b124fa038a945c8aec24|file:///home/wat/.config/zsh/.zim/init.zsh|1|16|V|zsh
+	typeset -g _zim_fpath=(/home/wat/.config/zsh/.zim/modules/utility/functions /home/wat/.config/zsh/.zim/modules/git-info/functions /home/wat/.config/zsh/.zim/modules/zsh-completions/src)
+e58fc735226175efa01dc530bb26e1f2|file:///home/wat/.config/zsh/.zim/init.zsh|1|17|V|zsh
+	# autoload -Uz -- mkcd mkpw coalesce git-action git-info
+	# source /home/wat/.config/zsh/.zim/modules/completion/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
+fb67296a379bf9687645b8c52ddedff6|file:///home/wat/.config/zsh/.zshrc|15|1|V|zsh
+	# Start configuration added by Zim install {{{
+	#
+	# User configuration sourced by interactive shells
+	#
+	
+	# -----------------
+	# Zsh configuration
+	# -----------------
+	
+	#
+	# History
+	#
+	
+	# Remove older command from the history if a duplicate is to be added.
+	setopt HIST_IGNORE_ALL_DUPS
+	
+	#
+	# Input/output
+	#
+	
+	# Set editor default keymap to emacs (`-e`) or vi (`-v`)
+	# bindkey -v
+	
+	# Prompt for spelling correction of commands.
+	#setopt CORRECT
+	
+	# Customize spelling correction prompt.
+	#SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
+	
+	# Remove path separator from WORDCHARS.
+	WORDCHARS=${WORDCHARS//[\/]}
+	
+	# -----------------
+	# Zim configuration
+	# -----------------
+	
+	# Use degit instead of git as the default tool to install and update modules.
+	#zstyle ':zim:zmodule' use 'degit'
+	
+	# --------------------
+	# Module configuration
+	# --------------------
+	
+	#
+	# git
+	#
+	
+	# Set a custom prefix for the generated aliases. The default prefix is 'G'.
+	# zstyle ':zim:git' aliases-prefix 'g'
+	
+	#
+	# input
+	#
+	
+	# Append `../` to your input for each `.` you type after an initial `..`
+	#zstyle ':zim:input' double-dot-expand yes
+	
+	#
+	# termtitle
+	#
+	
+	# Set a custom terminal title format using prompt expansion escape sequences.
+	# See http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
+	# If none is provided, the default '%n@%m: %~' is used.
+	#zstyle ':zim:termtitle' format '%1~'
+	
+	#
+	# zsh-autosuggestions
+	#
+	
+	# Disable automatic widget re-binding on each precmd. This can be set when
+	# zsh-users/zsh-autosuggestions is the last module in your ~/.zimrc.
+	ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+	
+	# Customize the style that the suggestions are shown with.
+	# See https://github.com/zsh-users/zsh-autosuggestions/blob/master/README.md#suggestion-highlight-style
+	#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+	
+	#
+	# zsh-syntax-highlighting
+	#
+	
+	# Set what highlighters will be used.
+	# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
+	ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+	
+	# Customize the main highlighter styles.
+	# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
+	#typeset -A ZSH_HIGHLIGHT_STYLES
+	#ZSH_HIGHLIGHT_STYLES[comment]='fg=242'
+	
+	# ------------------
+	# Initialize modules
+	# ------------------
+	
+	ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+	# Download zimfw plugin manager if missing.
+	if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+	  if (( ${+commands[curl]} )); then
+	    curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
+	        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+	  else
+	    mkdir -p ${ZIM_HOME} && wget -nv -O ${ZIM_HOME}/zimfw.zsh \
+	        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+	  fi
+	fi
+	# Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
+	if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+	  source ${ZIM_HOME}/zimfw.zsh init -q
+	fi
+	# Initialize modules.
+	source ${ZIM_HOME}/init.zsh
+	
+	# ------------------------------
+	# Post-init module configuration
+	# ------------------------------
+	
+	#
+	# zsh-history-substring-search
+	#
+	
+	zmodload -F zsh/terminfo +p:terminfo
+	# Bind ^[[A/^[[B manually so up/down works both before and after zle-line-init
+	for key ('^[[A' '^P' ${terminfo[kcuu1]}) bindkey ${key} history-substring-search-up
+	for key ('^[[B' '^N' ${terminfo[kcud1]}) bindkey ${key} history-substring-search-down
+	for key ('k') bindkey -M vicmd ${key} history-substring-search-up
+	for key ('j') bindkey -M vicmd ${key} history-substring-search-down
+	unset key
+	# }}} End configuration added by Zim install
+a38b1a20c9aa1fe4e3103336ada90040|file:///home/wat/.config/zsh/zshrc|10|1|V|zsh
+	# source /home/wat/.config/zsh/.zim/modules/environment/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/termtitle/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/utility/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/sorin/sorin.zsh-theme
+	# autoload -Uz -- mkcd mkpw coalesce git-action git-info
+	# source /home/wat/.config/zsh/.zim/modules/completion/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
+2995e90bd7e9e66d310c6de115906105|file:///home/wat/.config/zsh/zshrc|9|1|v|zsh
+	# zsh_add_file
+482a4705a646e5a87171d06ba98f0b5a|file:///home/wat/.config/zsh/.zshrc|10|1|V|zsh
+	# source /home/wat/.config/zsh/.zim/modules/environment/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/termtitle/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/utility/init.zsh
+	# source /home/wat/.config/zsh/.zim/modules/sorin/sorin.zsh-theme
+c19566c029020824df9953477bc5aadb|file:///home/wat/.config/zsh/.zshrc|10|1|V|zsh
+	# autoload -Uz -- mkcd mkpw coalesce git-action git-info
+bfc092cd8b628f5b238609d72f769a40|file:///home/wat/.config/zsh/.zshrc|10|1|V|zsh
+	# source /home/wat/.config/zsh/.zim/modules/completion/init.zsh
+84724bd613d4f82ee6eae9af1221fabf|file:///home/wat/.config/zsh/.zshrc|10|1|V|zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+f8716e373245602d80b3289292ed88ff|file:///home/wat/.config/zsh/.zshrc|10|1|V|zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-history-substring-search/zsh-history-substring-search.zsh
+ea03db7a39b97749d224190562321f05|file:///home/wat/.config/zsh/.zshrc|10|1|V|zsh
+	# source /home/wat/.config/zsh/.zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh
+82ae7e9491d925c4f5b0292a4d01f412|file:///home/wat/.config/zsh/.zimrc|31|9|v|conf
+	asciiship
+5f90d36d0bae0e2f71cd556a48ca5277|file:///home/wat/Downloads/skb-virtuell.de_private_key.key|1|1|v|
+	-----BEGIN RSA PRIVATE KEY-----
+	MIIEowIBAAKCAQEAuJFUczt6qUJHMd8d9XkFgWlYpuzhBwHSZTiPiwda2YMNvakG
+	ZLbLc17i95LFWQu6kI7idRF0rKdKIz3V5qElnAYCddgImGMm/yvUJzbnOVnpP1DQ
+	St/astK8oHfkPYoQwDr0A4aAwh2r2YwIbEnm/croFRfHdgydfkLgiuO8YrYFIh+T
+	z5JSjPKvTrkiG9GUVW9Jsingi3SilN6Fj16glLRhpLI+kxSq1G3qatLc+frW0ZBt
+	ujNAxK6UIbLA1zXX0p5a9NL5gINKLYaB1sZM0SHqE2pnHX28+7byDmSS/+m7Mxd/
+	IbckaXjWgsMO5/oROHDnIYDWMdl8OVIt3l+gHQIDAQABAoIBAQCybxYk/WjdwAzS
+	YzE0g1bWQQGLB9GZk6JTZ3Ym4+pqBPBA3usmbS6OEDr/PG78YoFwhiLbKRASZv0e
+	ywZDnKGekJTKVxwgLyOhaD8H1mV+pbUBGGD3Mind3iysOpx2/kapgZUs31kV0de1
+	T1NJVb0yuXrcAYw9TX7pdUBeJkOXbVqnMiiRA09DkOWkedqXYj5x3EE2VBmaH4nG
+	V7viSXmqRu996HiwIsQq1pFy6NnZJT8adqKuQSQAHkpGisGPSzAEFG5pTJfGZ6g7
+	TmFKmfwza/i15xAkxJjISKak80W0x+Bg9VomvHy63bQvevVqVHbktmv45Dd6f6fi
+	LvxQnqulAoGBAOfaIO/9clhx+ka4fZoiBsniQZscSQpwyg8Rj4WzmVI2NGJFjmEn
+	uAY6IORKkh6Fa2/zTPVJAdfHtwUGNFwpGt7rjeO4uKULLoFehba5xs39BGIWEhpa
+	ZIFfxCq5k1s23DJ/Zqk9wi8pZwk/3JQSF+LOpkk4SyQD3GKvM/pYeRcHAoGBAMvK
+	dUbwFeH9AW4YtqG+sWGJ616ZFtRTUTB6PV62YPgpqATxrxjXEBEaX2YY5/fA0c9Z
+	CcvXhtMW/IkH/YGIarnPQpb+cweubejVYGFg20gRBEHuthU9Gf6IsJJi+rwv7tV4
+	sm1QkOwWz4Fu4VY0FFWwnp4PKDUapHJBuK2vJEK7AoGAJGc5WLUgqQZsV4JMJlFF
+	Y5lk16ffSAZhk3Acas/COQhNvUhSjKqh2Eh0NaQHwUcNkWxQHwsxgOHYuK86tWW2
+	1F2Dz8eHJlLVIHbo48HTlzAs6gGxIfYjZbTVpiexHVdFx5/9TIFn5ePIS8l9JrqY
+	iYIM1d5C3grFJbGApcQSby0CgYBzYhP4sCKTq15N6awt8/wWj7I2A1OLsAi9+9gX
+	cgeBOoSpF/XdiJbOODJfaiacfg3M6krDoSnzBobBR0bfOk/DGHhJaZPTe407UOSa
+	/e3p5ciVVATADbJUDSx8FZKFTlZZg1by0bTcFyYx0IfA+QeyZKfKMia/um/1SQS5
+	Qfqz1QKBgBFre38gJ9HU2DDgpWsbmPH4aiqVASKDN60Tnmr/cYbk6WasC8IZ64wt
+	DFrv10xXMtbhfLhiBgvnzXBq3DdCWH26DlEbIVzBnvnK+JKv3sawbYNmSoiS2N8+
+	HZIpmNSN1+hRW8AYwZU5mVmTTO9q7qcyiCFnKlAJ3B6YrdHaH2x9
+	-----END RSA PRIVATE KEY-----
+4910797950d07363b8fe38ff0a79ed53|untitled:2|217|6|v|markdown
+	 - "Neovim::Ext" cpan module is not installed
+5c048ba0c9df18a51df1f5f71573901b|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|7|1|V|python
+	    def insert(el:int|float,arr:NDArray,sorted:NDArray]):
+	        sorted[i] = el if el < [i] else insert(el,arr,i+1)
+fbb911c9260cd799165123c7af9ab841|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|10|14|V|python
+	    sorted[i] = el if el < [i] else insert(el,arr,i+1)
+b3da4c9d8690600213351149fd6c5b0d|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|7|17|V|python
+	    sorted = np.empty_like(arr, dtype=type(arr))
+54f9e35336b237b020bd070e293b205d|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|15|11|v|python
+	insert(el, arr, sorted, (i - 1))
+96e8c3c5c7366cddbb24c0330b2f3a33|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|13|54|v|python
+	np.append(sorted, el, 1)
+66fcf03814dc7cb13edee207654b9bb0|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|14|21|V|python
+	    elif i == 0: np.insert(sorted, el, 1)
+26decc94d83c358f67f11c3cbd99b126|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|7|9|v|python
+	sorted
+22ecf05fcd7d0e3299b053c61148b9bc|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|13|26|v|python
+	sert(el, arr, 
+5acee4f50b620f7f2c90e048fbefde7d|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|14|35|v|python
+	if i==j:
+7d89715fae23ea35e4caf59ba8349700|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|1|1|V|python
+	from typing import List
+	import numpy as np
+	import numpy.typing as npt
+	
+	
+	def insertionsort(arr: npt.NDArray[np.int32], i=0):
+	    if i < arr.size:
+	        arr = insert(arr[i], arr, i)
+	        insertionsort(arr, i + 1)
+	    return arr
+	
+	
+	def insert(el: np.int32, arr: npt.NDArray[np.int32], i: np.int32, j=0):
+	    if el > arr[j]: insert(el, arr, i, (j + 1))
+	    elif el == arr[j]:
+	        if i == j:
+	            return arr
+	        else:
+	            np.delete(arr, i)
+	            return np.insert(arr, i, el)
+	    else:
+	        return np.insert(arr, j, el)
+e3b3e82f2e4595c3ef4f8512252b0779|file:///home/wat/Projekte/Lernen/Algorithmen/Insertionsort/isort.py|25|1|V|python
+	arr = np.array([2, 3, 1, 5, 67, 65])
+	print(arr)
+	print(arr.size)
+	print(insertionsort(arr))
+db350e8b393209bb108113edaf04118a|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|12|16|v|python
+	bubblesort(compare(arr, i + 1, j + 1), sorted, i + 1, j + 1)
+dbf79a16fce06937cdbf9318e82d9fe6|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|5|1|V|python
+	def bubblesort(arr: npt.NDArray[np.int32], sorted=False, i=-1, j=0):
+	    if sorted:
+	        return arr
+	    elif j+1 >= arr.size:
+	        i, j = -1, 0
+	        if :
+	            return bubblesort(arr,sorted=True)
+	        return bubblesort(compare(arr, i + 1, j + 1), sorted, i + 1, j + 1)
+	    else:
+	        return bubblesort(compare(arr, i + 1, j + 1), sorted, i + 1, j + 1)
+	
+	
+	def compare(arr: npt.NDArray[np.int32], i, j):
+	    if (arr[i] > arr[j]):
+	        arr[i], arr[j] = arr[j], arr[i]
+	    return arr
+efdba9d12f3433066bf3713391969d07|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|13|9|V|python
+	    else:
+e6b896f6f26dc5fb6ac6c52ccb26400c|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|12|71|V|python
+	        return bubblesort(compare(arr, i + 1, j + 1), sorted, i + 1, j + 1)
+96dade9a8bd903ca090474c1acfd9e80|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|5|1|V|python
+	def bubblesort(arr: npt.NDArray[np.int32], sorted=False, i=-1, j=0):
+	    if sorted:
+	        return arr
+	    elif j + 1 >= arr.size:
+	        i, j = -1, 0
+	        # if :
+	        #     return bubblesort(arr,sorted=True)
+	    return bubblesort(compare(arr, i + 1, j + 1), sorted, i + 1, j + 1)
+	
+	
+	def compare(arr: npt.NDArray[np.int32], i, j):
+	    if (arr[i] > arr[j]):
+	        arr[i], arr[j] = arr[j], arr[i]
+	    return arr
+6ae3e0a50450db198b4f8df3e1ef2fb2|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|5|1|v|python
+	def bubblesort(arr: npt.NDArray[np.int32], sorted=False, i=-1, j=0):
+	    if sorted:
+	        return arr
+	    elif j + 1 >= arr.size:
+	        i, j = -1, 0
+	        # if :
+	        #     return bubblesort(arr,sorted=True)
+	    return bubblesort(compare(arr, i + 1, j + 1), sorted, i + 1, j + 1)
+	
+	
+	def compare(arr: npt.NDArray[np.int32], i, j):
+	    if (arr[i] > arr[j]):
+	        arr[i], arr[j] = arr[j], arr[i]
+	    return arr
+	
+	
+74073df286c67a0889e4c989fa5c1aea|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|15|10|V|python
+	    if arr
+e2b36e944f3e33df4f040b287ab317a1|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|14|10|V|python
+	def checkSorting(arr):
+e1163e9b6302e91695507c8efffe3fb3|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|8|11|V|python
+	def compare(a: np.int32, b: np.int32):
+fd1177e045628f573463d8b9a5083879|file:///home/wat/Projekte/Lernen/Algorithmen/bubblesort/bsort.py|8|11|V|python
+	    return a > b
+8c8de1bc92e90918419558492dd8b0d4|file:///home/wat/Projekte/Lernen/TDD/functional_tests.py|16|36|V|python
+	browser.get('http://localhost:8000')
+655f7c7e4daca8235e95c921f7715313|file:///home/wat/Projekte/Lernen/TDD/functional_tests.py|15|1|V|python
+	browser = webdriver.Firefox()
+2ab0d069d573b4d10352866c01347187|file:///home/wat/Projekte/Lernen/TDD/functional_tests.py|16|1|V|python
+	assert 'Congratulations' in browser.title
+ee19fa91360ebc6ce5ef98a7bd0a9b40|file:///home/wat/Projekte/Lernen/TDD/functional_tests.py|2|26|v|python
+	ExampleCase
+36e632c09cca51df4c6c4e91b52f777d|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|4|16|V|python
+	from lists.views import home_page
+cc63954b9bb4466928d2581130e0220e|file:///home/wat/Projekte/Lernen/TDD/superlists/lists/views.py|3|1|V|python
+	# Create your views here.
+07d2696a253a0caa34a368eea227b1ad|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/urls.py|19|22|V|python
+	from lists import views
+b073a7bf79b7bd8e9ebbb07de060be8f|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|8|16|V|python
+	home_page = None
+3968375901aefcf068f91d6f067d12d5|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|4|35|V|python
+	from django.shortcuts import render
+ca8d690bc08f1b6b994aa7f3399c102c|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/settings.py|1|1|^v|python
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+98c9767dd31164d02f9edff80468129e|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/settings.py|42|4|V|python
+	    # 'store',
+10b2fde571c5cb0a19a5d3e322e09f2b|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/urls.py|20|28|V|python
+	    path('admin/', admin.site.urls),
+552ec0b3bb529df9404b90aeaba32637|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|33|31|v|python
+	To-Do lists
+c26bdcc0e127553a66daf85f9306c85c|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|22|37|V|python
+	        self.fail('Finish the test!')
+64bbac78226d23456300aebb40048c91|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|26|1|V|python
+	        inputbox = self.browser.find_element_by_id('id_new_item')
+aab9e1de16f38176f86d7a92ba337a8d|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|33|9|v|python
+	table
+e9dabf1239d70d45497ef60f0e40a925|file:///home/wat/Projekte/Lernen/TDD/superlists/lists/templates/home.html|5|40|v|html
+	device-width, initial-scale=1.0">
+	  <title>Document
+0945359809dad1fbf3dea1c95a0da951|file:///home/wat/Projekte/Lernen/TDD/superlists/lists/templates/home.html|6|10|v|html
+	Document
+ac73f238dff8699f1c4343633acc84e6|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|44|9|v|python
+	response =
+cf87c91679f8c317be5bd4111878f53e|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|44|18|V|python
+	         home_page(request)
+5bf26101f37b067d1677d2dd123073ac|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|44|18|V|python
+	        html = response.content.decode('utf8')
+59d892cafad9f336f4db5647722c45d9|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|44|18|V|python
+	        self.assertTrue(html.startswith('<html>'))
+ebcc80c95a401d8b14cc26a288f767a7|file:///home/wat/Projekte/Lernen/TDD/superlists/functional_tests.py|44|18|V|python
+	        self.assertIn('<title>To-Do lists</title>', html)
+a3b0502ac9903d1521ddc59b5be684df|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/urls.py|20|3|v|python
+	  path('', views.home_page, name='home')
+	
+e179b6a9b37ccb56f11e3b034f58ea9b|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/urls.py|19|1|V|python
+	from django.conf.urls import include, url
+db9ef14805a8b24fbbf58bfd57acd2ce|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/urls.py|17|12|V|python
+	from django.urls import path
+63dd2348badd1f0d55ffc907a0ff5674|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/settings.py|14|13|V|python
+	django.setup()
+d18ae1c97f15488dab9eaafd57f9f7bb|file:///home/wat/Projekte/Lernen/TDD/superlists/superlists/settings.py|12|13|V|python
+	import django
+a3774ad0bb7cf0dec033725b8386edec|file:///home/wat/Projekte/Lernen/TDD/superlists/lists/views.py|3|34|V|python
+	from django.http import HttpResponse
+f4cc25f6a2c2c979a78c440f55ee65b1|file:///home/wat/skb-project/docker-compose.yml|1|1|V|yaml.docker-compose
+	services:
+	  skb:
+	    build:
+	      context: skb-and-skb-3dmodels
+	      dockerfile: DockerFile.dev
+	    ports:  
+	      - '4200:4200'
+	    volumes:
+	      - ./skb-and-skb-3d-models/:/frontend
+	      - /fronted/node_modules
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+	  meilisearchEngine:
+	    image:  getmeili/meilisearch:latest
+	    environment:
+	      MEILI_NO_ANALYTICS: true
+	      MEILI_MASTER_KEY: F04EE08C34494EE7061EB3743932441D2E71E44C
+	    ports:
+	      - '7700:8081'
+	    volumes:
+	      - ./meilidata:/meili_data
+8d7db1414ba59fd8c0b15938a6f58b34|file:///home/wat/skb-project/docker-compose.yml|1|1|v|yaml.docker-compose
+	version: '2.5'
+	services:
+	  skb:
+	    build:
+	      context: skb-and-skb-3dmodels
+	      dockerfile: DockerFile.dev
+	    ports:  
+	      - '4200:4200'
+	    volumes:
+	      - ./skb-and-skb-3dmodels:/frontend
+	      - /fronted/node_modules
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+	  meilisearchEngine:
+	    image:  getmeili/meilisearch:latest
+	    environment:
+	      MEILI_NO_ANALYTICS: true
+	      MEILI_MASTER_KEY: F04EE08C34494EE7061EB3743932441D2E71E44C
+	    ports:
+	      - '7700:8081'
+	    volumes:
+	      - ./meili_data:/meili_data
+ad422da21a9d4b0c0a2e455ad688b9d2|file:///home/wat/skb-project/docker-compose.yml|12|1|V|yaml.docker-compose
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+47c16f2e3678dd4ff4131f2cc7a8cf23|file:///home/wat/skb-project/docker-compose.yml|3|3|V|yaml.docker-compose
+	  skb:
+	    build:
+	      context: skb-and-skb-3dmodels
+	      dockerfile: DockerFile.dev
+	    ports:  
+	      - '4200:4200'
+	    volumes:
+	      - ./skb-and-skb-3dmodels:/frontend
+	      - /fronted/node_modules
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+33496b4d55607f49d0fbd44638a5bc1f|file:///home/wat/skb-project/docker-compose.yml|3|1|V|yaml.docker-compose
+	  skb:
+	    build:
+	      context: skb-and-skb-3dmodels
+	      dockerfile: DockerFile.dev
+	    ports:  
+	      - '4200:4200'
+	    volumes:
+	      - ./skb-and-skb-3dmodels:/frontend
+	      - /fronted/node_modules
+ce458cec94725ead82f1e4b8a8763173|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|3|22|V|dockerfile
+	ARG WORK_DIR=/frontend
+64924aa69d292e14d868b088777c0ac3|file:///home/wat/skb-project/docker-compose.yml|11|29|V|yaml.docker-compose
+	      - /fronted/node_modules
+e95513b4f40acd073148a73381e5f867|file:///home/wat/skb-project/docker-compose.yml|11|1|V|yaml.docker-compose
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+	  meilisearchEngine:
+	    image:  getmeili/meilisearch:latest
+	    environment:
+	      MEILI_NO_ANALYTICS: true
+	      MEILI_MASTER_KEY: F04EE08C34494EE7061EB3743932441D2E71E44C
+	    ports:
+	      - '7700:8081'
+	    volumes:
+	      - ./meili_data:/meili_data
+12dca8de98524645c5edc217bd365367|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|5|21|v|dockerfile
+	/node_modules/.bin
+86cd5ae30c77c07c38fec25027f092a4|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|5|21|V|dockerfile
+	ENV PATH ${WORK_DIR}/node_modules/.bin:$PATH
+3727170bb1d151cc607c38e568345c6f|file:///home/wat/skb-project/docker-compose.yml|13|26|V|yaml.docker-compose
+	ENV PATH ${WORK_DIR}:$PATH
+cff74101d208432255c47cdbf39752f9|file:///home/wat/skb-project/docker-compose.yml|9|1|V|yaml.docker-compose
+	    volumes:
+	      - ./skb-and-skb-3dmodels:/frontend
+	    environment:
+	      PATH: /frontend/node_modules/.bin:$PATH
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+	  meilisearchEngine:
+	    image:  getmeili/meilisearch:latest
+	    environment:
+	      MEILI_NO_ANALYTICS: true
+	      MEILI_MASTER_KEY: F04EE08C34494EE7061EB3743932441D2E71E44C
+	    ports:
+	      - '7700:8081'
+	    volumes:
+	      - ./meili_data:/meili_data
+db21c7153fcd2ab8336e7240516b9b4f|file:///home/wat/skb-project/docker-compose.yml|12|1|V|yaml.docker-compose
+	      PATH: /frontend/node_modules/.bin:$PATH
+ec6b26e7917edbaf9acd8a500f2f12c5|file:///home/wat/skb-project/docker-compose.yml|11|1|V|yaml.docker-compose
+	    environment:
+71c1e974d3bfb294184079ab1580ac94|file:///home/wat/.config/zsh/zshrc|20|1|V|zsh
+	eval 
+	_direnv_hook() {
+	  trap -- '' SIGINT;
+	  eval "$("/usr/bin/direnv" export zsh)";
+	  trap - SIGINT;
+	}
+	typeset -ag precmd_functions;
+	if [[ -z "${precmd_functions[(r)_direnv_hook]+1}" ]]; then
+	  precmd_functions=( _direnv_hook ${precmd_functions[@]} )
+	fi
+	typeset -ag chpwd_functions;
+	if [[ -z "${chpwd_functions[(r)_direnv_hook]+1}" ]]; then
+	  chpwd_functions=( _direnv_hook ${chpwd_functions[@]} )
+	fi
+e82780e8de9b4a6921c4f03855f6df29|file:///home/wat/.config/zsh/zshrc|20|1|V|zsh
+	eval "$(pyenv init --path)"
+f3a8e64560ef946ff1a790be821a86c2|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|4|17|v|python
+	http://pythonscraping.com/pages/page1.html
+ff93fbd598eec3d7a807e4c44b375dd7|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|15|44|V|python
+	    bs2 = BeautifulSoup(html, 'html.parser')
+d35e87cc05afe1238565d902214fb5a8|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|9|1|V|python
+	except HTTPError as e:
+	    print(e)
+ced3ae9a63f26c731eb35df1813d97eb|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|5|5|V|python
+	try:
+	    html = urlopen('http://pythonscraping.com/pages/page1.html')
+	except HTTPError as e:
+	    print(e)
+	except URLError as e:
+	    print(e)
+	else:
+	    bs = BeautifulSoup(html.read(), 'html.parser')
+	    # can also use the file object 'html' with needing to call 'html.read()' first
+	    # some other popular parsers 'lxml' & 'html5lib'
+f23cb95879bc80f29cbd0df400e798ac|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|11|24|v|python
+	'http://pythonscraping.com/pages/page1.html'
+90df77d85c593b4370094409875ada86|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|5|1|V|python
+	print(bs.h1)
+	print(bs.h2)
+	print(bs.BeautifulSoup)
+f1062f01523983564e0a1ddeea7bcf13|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|18|1|V|python
+	        print(bs.h1)
+5725570c27b31ac00b3957880c577c33|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|18|1|V|python
+	        print(bs.h2)
+13109ab838be21999e9b6a2d45a6ed5d|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|18|1|V|python
+	        print(bs.BeautifulSoup)
+56ddafe628012ed58b39c8e8dcf478e9|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|19|1|V|python
+	            print("===========================")
+5152104698a72231ee8336deccf3497b|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|27|15|V|python
+	        yield el
+c32382d86cd55db9c3c146318a66a9af|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|18|26|V|python
+	        for attr in dir(bs):
+8ff329bfffd75e7e04574fe5b29fa304|file:///home/wat/Projekte/Lernen/webscraping/scrapetest.py|18|26|V|python
+	            print(attr, getattr(bs, attr))
+2ab616ef05d50511613db2ceae25cf21|file:///home/wat/skb-project/docker-compose.dev.yml|11|1|V|yaml.docker-compose
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:8083'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+	  meilisearch:
+	    image:  getmeili/meilisearch:latest
+	    environment:
+	      MEILI_NO_ANALYTICS: true
+	      MEILI_MASTER_KEY: F04EE08C34494EE7061EB3743932441D2E71E44C
+	    ports:
+	      - '7700:8081'
+	    volumes:
+	      - ./meili_data:/meili_data
+7052c7be29d69a3dbb78c1bb16e04c32|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|1|1|v|dockerfile
+	FROM node:16.14-alpine
+	
+	ARG WORK_DIR=/frontend
+	
+	RUN mkdir ${WORK_DIR}
+	WORKDIR ${WORK_DIR}
+	
+	ENV PATH ${WORK_DIR}/node_modules/.bin:$PATH
+	
+	COPY package.json ${WORK_DIR}
+	COPY yarn.lock ${WORK_DIR}
+	
+	RUN yarn install
+	COPY ./ ${WORK_DIR}/
+	
+	EXPOSE 4200
+	
+	CMD ["yarn", "start"]
+9dce98e088a709056f05847b2cd13ad8|file:///home/wat/.ssh/id_rsa.pub|1|1|V|
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDW2+cSm6KnO3FajUB3pq4rZPYtPk7tCWAK/MmTI4mMrEyxzr3CHQSa29gy3EyM/3lXhySAotUA7wb7TShV+Dp+fI69rNBljoIXKyWoAuu5ptgy0PDAHvaJ+MqOphdbJLv/hsEExyS3XPKQS1BokNSXZm09ZJ/U5DrOaFwXWfQOFSNSMCGVzlIMtjNYILEPbLUl/+2lee09faffBGf7oYPavPvAhKK1NjJASBthPyJzBq8FIgnJ/PXWfSbwGfULSJ0fLgjjlyG3oW+BjSc6kI+io0KUcSbZa4JUJWEyFcu/2k94mnAWs7p6xfQahZVXYol7WK8Uw5ymgrL2w+ULG9F6e/QC4wiDQy52ye5VZHv8E70l1qzdr12lJccqE+sHVXfBpu3PM18lWJI3uOr2tMDVyd7n0sz3zwn2aYMKhZivbxkkmQ3foCiS/50Ns1nQJj0SUfcfWns00tQ0IdWe1cZoI9SZpivOTp9FRH1K1TkznsPyydzPOi65nXRmToubyLk= skb
+7600a308a93c55f1fe545abde1976149|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|6|17|V|dockerfile
+	WORKDIR ${WORK_DIR}
+bb3462b62cd8db3f9ba007d86f8d1c6d|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|2|5|v|dockerfile
+	yarn
+ce04bc48dfbf4b8ea100443ad407ed51|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|11|6|V|dockerfile
+	COPY yarn.lock ${WORK_DIR}
+1a769d60b8e3de658ae469ff83c3254c|file:///home/wat/skb-project/skb-and-skb-3dmodels/Dockerfile.dev|16|7|V|dockerfile
+	CMD ["pwd"]
+91d3d0626ccc666fb34be5831926b20a|file:///home/wat/skb-project/docker-compose.dev.yml|1|1|V|yaml.docker-compose
+	version: '2.5'
+	services:
+	  angular:
+	    build:
+	      context: skb-and-skb-3dmodels/
+	      dockerfile: Dockerfile.dev
+	    ports:  
+	      - '4200:4200'
+	    volumes:
+	      - ./skb-and-skb-3dmodels:/frontend
+39290477435569bad6bf53f263597f98|file:///home/wat/skb-project/redaktionssystem/Strapi/.env.example|1|1|V|sh
+	HOST=0.0.0.0
+d76450d0e97c545bbf482916086812a4|file:///home/wat/skb-project/redaktionssystem/Strapi/Dockerfile.dev|1|1|v|dockerfile
+	FROM node:16.14-alpine
+	ARG NODEENV=development
+	ARG WORK_DIR=/backend
+	ENV NODE_ENV=${NODEENV}
+	WORKDIR ${WORK_DIR}
+	COPY ./package.json ./
+	COPY ./yarn.lock ./
+	ENV PATH ${WORK_DIR}/node_modules/.bin:$PATH
+	RUN yarn config set network-timeout 600000 -g
+	RUN yarn install
+	COPY ./ .
+	RUN yarn build
+	EXPOSE 1337
+	CMD ["yarn", "develop"]
+	
+7c524868241937038b396935ae4a89fc|file:///home/wat/skb-project/docker-compose.dev.yml|1|1|V|yaml.docker-compose
+	version: '2.5'
+	services:
+	  angular:
+	    build:
+	      context: skb-and-skb-3dmodels/
+	      dockerfile: Dockerfile.dev
+	    ports:  
+	      - '4200:4200'
+	    volumes:
+	      - ./skb-and-skb-3dmodels:/frontend
+	  strapi:
+	      build:
+	        context: redaktionssystem/Strapi
+	        dockerfile: Dockerfile.dev
+	      ports:
+	        - '1337:1337'
+	      volumes:
+	        - ./redaktionssystem/Strapi/src:/backend/src
+	  meilisearch:
+	    image:  getmeili/meilisearch:latest
+	    environment:
+	      MEILI_NO_ANALYTICS: 'true'
+	      MEILI_MASTER_KEY: 'F04EE08C34494EE7061EB3743932441D2E71E44C'
+	    ports:
+	      - '7700:7700'
+	    volumes:
+	      - ./meili_data:/meili_data
+507ed28f68e1b54900e16f4c1b56b991|file:///home/wat/.config/i3status-rust/config.toml|55|19|V|toml
+	display_type = "cpu"
+84502f511a8b16cca23d7aa1f46b1e99|file:///home/wat/.config/i3status-rust/config.toml|56|12|V|toml
+	icons = true
+4535932a9e070ac5b5cd19e8594f19bf|file:///home/wat/.config/zsh/zsh-functions|5|1|V|zsh
+	#compdef poetry
+	
+	_poetry_96d72f3cd3ae1df5_complete()
+	{
+	    local state com cur
+	
+	    cur=${words[${#words[@]}]}
+	
+	    # lookup for command
+	    for word in ${words[@]:1}; do
+	        if [[ $word != -* ]]; then
+	            com=$word
+	            break
+	        fi
+	    done
+	
+	    if [[ ${cur} == --* ]]; then
+	        state="option"
+	        opts=("--ansi:Force ANSI output" "--help:Display this help message" "--no-ansi:Disable ANSI output" "--no-interaction:Do not ask any interactive question" "--quiet:Do not output any message" "--verbose:Increase the verbosity of messages: \\\"-v\\\" for normal output, \\\"-vv\\\" for more verbose output and \\\"-vvv\\\" for debug" "--version:Display this application version")
+	    elif [[ $cur == $com ]]; then
+	        state="command"
+	        coms=("about:Shows information about Poetry." "add:Adds a new dependency to pyproject.toml." "build:Builds a package, as a tarball and a wheel by default." "cache:Interact with Poetry\'s cache" "check:Checks the validity of the pyproject.toml file." "config:Manages configuration settings." "debug:Debug various elements of Poetry." "env:Interact with Poetry\'s project environments." "export:Exports the lock file to alternative formats." "help:Display the manual of a command" "init:Creates a basic pyproject.toml file in the current directory." "install:Installs the project dependencies." "lock:Locks the project dependencies." "new:Creates a new Python project at <path\>." "publish:Publishes a package to a remote repository." "remove:Removes a package from the project dependencies." "run:Runs a command in the appropriate environment." "search:Searches for packages on remote repositories." "self:Interact with Poetry directly." "shell:Spawns a shell within the virtual environment." "show:Shows information about packages." "update:Update the dependencies as according to the pyproject.toml file." "version:Shows the version of the project or bumps it when a valid bump rule is provided.")
+	    fi
+	
+	    case $state in
+	        (command)
+	            _describe 'command' coms
+	        ;;
+	        (option)
+	            case "$com" in
+	
+	            (about)
+	            opts+=()
+	            ;;
+	
+	            (add)
+	            opts+=("--allow-prereleases:Accept prereleases." "--dev:Add as a development dependency." "--dry-run:Output the operations but do not execute anything \(implicitly enables --verbose\)." "--extras:Extras to activate for the dependency." "--lock:Do not perform operations \(only update the lockfile\)." "--optional:Add as an optional dependency." "--platform:Platforms for which the dependency must be installed." "--python:Python version for which the dependency must be installed." "--source:Name of the source to use to install the package.")
+	            ;;
+	
+	            (build)
+	            opts+=("--format:Limit the format to either sdist or wheel.")
+	            ;;
+	
+	            (cache)
+	            opts+=()
+	            ;;
+	
+	            (check)
+	            opts+=()
+	            ;;
+	
+	            (config)
+	            opts+=("--list:List configuration settings." "--local:Set/Get from the project\'s local configuration." "--unset:Unset configuration setting.")
+	            ;;
+	
+	            (debug)
+	            opts+=()
+	            ;;
+	
+	            (env)
+	            opts+=()
+	            ;;
+	
+	            (export)
+	            opts+=("--dev:Include development dependencies." "--extras:Extra sets of dependencies to include." "--format:Format to export to. Currently, only requirements.txt is supported." "--output:The name of the output file." "--with-credentials:Include credentials for extra indices." "--without-hashes:Exclude hashes from the exported file.")
+	            ;;
+	
+	            (help)
+	            opts+=()
+	            ;;
+	
+	            (init)
+	            opts+=("--author:Author name of the package." "--dependency:Package to require, with an optional version constraint, e.g. requests:\^2.10.0 or requests=2.11.1." "--description:Description of the package." "--dev-dependency:Package to require for development, with an optional version constraint, e.g. requests:\^2.10.0 or requests=2.11.1." "--license:License of the package." "--name:Name of the package." "--python:Compatible Python versions.")
+	            ;;
+	
+	            (install)
+	            opts+=("--dry-run:Output the operations but do not execute anything \(implicitly enables --verbose\)." "--extras:Extra sets of dependencies to install." "--no-dev:Do not install the development dependencies." "--no-root:Do not install the root package \(the current project\)." "--remove-untracked:Removes packages not present in the lock file.")
+	            ;;
+	
+	            (lock)
+	            opts+=("--no-update:Do not update locked versions, only refresh lock file.")
+	            ;;
+	
+	            (new)
+	            opts+=("--name:Set the resulting package name." "--src:Use the src layout for the project.")
+	            ;;
+	
+	            (publish)
+	            opts+=("--build:Build the package before publishing." "--cert:Certificate authority to access the repository." "--client-cert:Client certificate to access the repository." "--dry-run:Perform all actions except upload the package." "--password:The password to access the repository." "--repository:The repository to publish the package to." "--username:The username to access the repository.")
+	            ;;
+	
+	            (remove)
+	            opts+=("--dev:Remove a package from the development dependencies." "--dry-run:Output the operations but do not execute anything \(implicitly enables --verbose\).")
+	            ;;
+	
+	            (run)
+	            opts+=()
+	            ;;
+	
+	            (search)
+	            opts+=()
+	            ;;
+	
+	            (self)
+	            opts+=()
+	            ;;
+	
+	            (shell)
+	            opts+=()
+	            ;;
+	
+	            (show)
+	            opts+=("--all:Show all packages \(even those not compatible with current system\)." "--latest:Show the latest version." "--no-dev:Do not list the development dependencies." "--outdated:Show the latest version but only for packages that are outdated." "--tree:List the dependencies as a tree.")
+	            ;;
+	
+	            (update)
+	            opts+=("--dry-run:Output the operations but do not execute anything \(implicitly enables --verbose\)." "--lock:Do not perform operations \(only update the lockfile\)." "--no-dev:Do not update the development dependencies.")
+	            ;;
+	
+	            (version)
+	            opts+=("--short:Output the version number only")
+	            ;;
+	
+	            esac
+	
+	            _describe 'option' opts
+	        ;;
+	        *)
+	            # fallback to file completion
+	            _arguments '*:file:_files'
+	    esac
+	}
+	
+	_poetry_96d72f3cd3ae1df5_complete "$@"
+	compdef _poetry_96d72f3cd3ae1df5_complete /home/wat/.local/bin/poetry
+4083fe7800d680a3af6e78074fb1bd97|file:///home/wat/Projekte/Lernen/Technische%20Grundlagen%20der%20KI/compact-probability/tests/test_probability.py|3|16|V|python
+	from pytest_bdd import scenario, given, when, then

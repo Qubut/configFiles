@@ -1,0 +1,83 @@
+# theme = "gruvbox-dark"
+icons = "awesome5"
+[theme]
+name = "solarized-dark"
+[theme.overrides]
+idle_bg = "#123456"
+idle_fg = "#abcdef"
+[[block]]
+block = "sound"
+[[block]]
+block = "backlight"
+[[block]]
+block = "music"
+buttons = ["prev","play", "next"]
+# [[block]]
+# block = "disk_space"
+# path = "/"
+# alias = "/"
+# info_type = "available"
+# unit = "GB"
+# interval = 20
+# warning = 20.0
+# alert = 10
+# format = "({available}{unit} free)"
+# [[block]]
+# block = "disk_space"
+# path = "/home"
+# alias = "/"
+# info_type = "available"
+# unit = "GB"
+# interval = 20
+# warning = 20.0
+# alert = 10
+# format = "{icon}{used}/{total} {unit} ({available}{unit} free)"
+
+# [[block]]
+# block = "memory"
+# display_type = "memory"
+# format_mem = "{MFg}{Mup}%"
+# format_swap = "{SUp}%"
+[[block]]
+block = "memory"
+format_mem ="{mem_used;M}/{mem_free;M} ({mem_total_used_percents})"
+format_swap = "{SUm}MB/{STm}MB({SUp}%)"
+display_type = "memory"
+icons = true
+clickable = true
+interval = 5
+warning_mem = 80
+warning_swap = 80
+critical_mem = 95
+critical_swap = 95
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization} {frequency}"
+
+# [[block]]
+# block = "load"
+# interval = 1
+# format = "{1m}"
+# [[block]]
+# block = "temperature"
+# collapsed = false
+# interval = 10
+# format = "{min}° min, {max}° max, {average}° avg"
+# chip = "*-isa-*"
+# inputs = ["CPUTIN", "SYSTIN"]
+[[block]]
+block = "uptime"
+# [[block]]
+# block = "keyboard_layout"
+# format = " {layout}"
+# driver = "localebus"
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}%"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
