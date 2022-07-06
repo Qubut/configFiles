@@ -6,7 +6,7 @@ set $term alacritty
 set $term1 kitty
 set $term2 xfce4-terminal
 set $fileManager thunar
-set $inner_gaps 0
+set $inner_gaps 9
 set $outer_gaps 0
 set $ws1 "1 &#xf269; "
 set $ws2 "2 &#xf042; "
@@ -301,27 +301,27 @@ bar {
         colors {
                 statusline #1fa578
                 background $bar-color
-                separator #1fa578
-
-                                 # border             background         text
-                focused_workspace  $workspace_border_color          $workspace_bg_color          $active_workspace_text_color            
+        #         separator #1fa578
+#
+#                                  # border             background         text
+                focused_workspace  $workspace_border_color          $workspace_bg_color          $active_workspace_text_color          
                 inactive_workspace $workspace_border_color $workspace_bg_color $inactive-text-color
                 urgent_workspace   $urgent-bg-color   $workspace_bg_color   $urgent-text-color
             }
 }
 ## start rofi (a program launcher)
-bindsym $mod+x exec rofi -modi drun -show drun -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Source Code Pro 16"
+# bindsym $mod+x exec rofi -modi drun -show drun -line-padding 4 \
+#                 -columns 2 -padding 50 -hide-scrollbar \
+#                 -show-icons -drun-icon-theme "Arc-Dark" -font "Source Code Pro 16"
                 
-bindsym $mod+z exec rofi -show window -line-padding 4 \
-                -lines 6 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Arc-X-D" -font "Source Code Pro 16"
+# bindsym $mod+z exec rofi -show window -line-padding 4 \
+#                 -lines 6 -padding 50 -hide-scrollbar \
+#                 -show-icons -drun-icon-theme "Arc-X-D" -font "Source Code Pro 16"
 # bindsym $mod+x exec --no-startup-id "rofi -theme Arc-Dark -show drun -font \\"Source Code Pro 16\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
 # bindsym $mod+d exec --no-startup-id "rofi -theme Arc-Dark -show run -font \\"Source Code Pro 16\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
-bindsym $mod+Shift+d exec rofi -modi run -show run -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -run-icon-theme "Arc-X-D" -font "Source Code Pro 16"
+# bindsym $mod+Shift+d exec rofi -modi run -show run -line-padding 4 \
+#                 -columns 2 -padding 50 -hide-scrollbar \
+#                 -show-icons -run-icon-theme "Arc-X-D" -font "Source Code Pro 16"
 # bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 # bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 # set floating (nontiling)for apps needing it
@@ -377,4 +377,14 @@ exec_always --no-startup-id feh --no-fehbg --randomize --bg-fill ~/Bilder/Bildsc
 # exec --no-startup-id xidlehook --not-when-fullscreen --timer 600 "i3lock-fancy -f 'Source Code Pro'" ''
 # run auto tiling
 exec_always --no-startup-id autotiling
-exec --no-startup-id picom -b
+
+# launcher
+bindsym $mod+x exec --no-startup-id "$HOME/.config/rofi/bin/launcher_misc"
+bindsym $mod+z exec rofi -show window -line-padding 4 \
+                 -lines 6 -padding 50 -hide-scrollbar \
+                 -show-icons -drun-icon-theme "Arc-X-D" -font "Source Code Pro 16"
+# xfce4
+# xfsettingsd 
+# exec --no-startup-id xfce4-panel --disable-wm-check
+exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
+exec --no-startup-id xfce4-power-manager

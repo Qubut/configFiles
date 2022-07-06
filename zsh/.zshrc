@@ -1,145 +1,153 @@
-# Start configuration added by Zim install {{{
-#
-# User configuration sourced by interactive shells
-#
-
-# -----------------
-# Zsh configuration
-# -----------------
-
-#
-# History
-#
-
-# Remove older command from the history if a duplicate is to be added.
-setopt HIST_IGNORE_ALL_DUPS
-
-#
-# Input/output
-#
-
-# Set editor default keymap to emacs (`-e`) or vi (`-v`)
-bindkey -e
-
-# Prompt for spelling correction of commands.
-#setopt CORRECT
-
-# Customize spelling correction prompt.
-#SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
-
-# Remove path separator from WORDCHARS.
-WORDCHARS=${WORDCHARS//[\/]}
-
-# -----------------
-# Zim configuration
-# -----------------
-
-# Use degit instead of git as the default tool to install and update modules.
-#zstyle ':zim:zmodule' use 'degit'
-
-# --------------------
-# Module configuration
-# --------------------
-
-#
-# git
-#
-
-# Set a custom prefix for the generated aliases. The default prefix is 'G'.
-#zstyle ':zim:git' aliases-prefix 'g'
-
-#
-# input
-#
-
-# Append `../` to your input for each `.` you type after an initial `..`
-#zstyle ':zim:input' double-dot-expand yes
-
-#
-# termtitle
-#
-
-# Set a custom terminal title format using prompt expansion escape sequences.
-# See http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Simple-Prompt-Escapes
-# If none is provided, the default '%n@%m: %~' is used.
-#zstyle ':zim:termtitle' format '%1~'
-
-#
-# zsh-autosuggestions
-#
-
-# Disable automatic widget re-binding on each precmd. This can be set when
-# zsh-users/zsh-autosuggestions is the last module in your ~/.zimrc.
-ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-
-# Customize the style that the suggestions are shown with.
-# See https://github.com/zsh-users/zsh-autosuggestions/blob/master/README.md#suggestion-highlight-style
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
-
-#
-# zsh-syntax-highlighting
-#
-
-# Set what highlighters will be used.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters.md
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
-
-# Customize the main highlighter styles.
-# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
-#typeset -A ZSH_HIGHLIGHT_STYLES
-#ZSH_HIGHLIGHT_STYLES[comment]='fg=242'
-
-# ------------------
-# Initialize modules
-# ------------------
-
-ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-# Download zimfw plugin manager if missing.
-if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
-  if (( ${+commands[curl]} )); then
-    curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
-        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
-  else
-    mkdir -p ${ZIM_HOME} && wget -nv -O ${ZIM_HOME}/zimfw.zsh \
-        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
-  fi
-fi
-# Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
-if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
-  source ${ZIM_HOME}/zimfw.zsh init -q
-fi
-# Initialize modules.
-source ${ZIM_HOME}/init.zsh
-
-# ------------------------------
-# Post-init module configuration
-# ------------------------------
-
-#
-# zsh-history-substring-search
-#
-
-zmodload -F zsh/terminfo +p:terminfo
-# Bind ^[[A/^[[B manually so up/down works both before and after zle-line-init
-for key ('^[[A' '^P' ${terminfo[kcuu1]}) bindkey ${key} history-substring-search-up
-for key ('^[[B' '^N' ${terminfo[kcud1]}) bindkey ${key} history-substring-search-down
-for key ('k') bindkey -M vicmd ${key} history-substring-search-up
-for key ('j') bindkey -M vicmd ${key} history-substring-search-down
-unset key
-# }}} End configuration added by Zim install
-
-# some useful config
 unsetopt BEEP
 setopt interactive_comments
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^x^e' edit-command-line
+# Remove older command from the history if a duplicate is to be added.
+setopt HIST_IGNORE_ALL_DUPS
 # Useful Functions
 source "$ZDOTDIR/zsh-functions"
 # Normal files to source
-zsh_add_file "zsh-vim-mode"
+# zsh_add_file "zsh-vim-mode"
 zsh_add_file "zsh-aliases"
-zsh_add_file "zsh-prompt"
-export TERMINAL=/usr/bin/kitty
-# source /usr/share/nvm/nvm.sh
-# source /usr/share/nvm/bash_completion
-# source /usr/share/nvm/install-nvm-exec
-# [ -z "$NVM_DIR" ] && export NVM_DIR="$XDG_DATA_HOME"/nvm --no-use
+# zsh_add_file "zsh-prompt"
+if [ -n "${ZSH_VERSION-}" ]; then
+  # If you are certain that you must export some environment variables
+  # in ~/.zshenv (see comments at the top!), do it here:
+  #
+  #   export GOPATH=$HOME/go
+  #
+  # Do not change anything else in this file.
 
+  : ${ZDOTDIR:=~}
+  setopt no_global_rcs
+  [[ -o no_interactive && -z "${Z4H_BOOTSTRAPPING-}" ]] && return
+  setopt no_rcs
+  unset Z4H_BOOTSTRAPPING
+fi
+
+Z4H_URL="https://raw.githubusercontent.com/romkatv/zsh4humans/v5"
+: "${Z4H:=${XDG_CACHE_HOME:-$HOME/.cache}/zsh4humans/v5}"
+
+umask o-w
+
+if [ ! -e "$Z4H"/z4h.zsh ]; then
+  mkdir -p -- "$Z4H" || return
+  >&2 printf '\033[33mz4h\033[0m: fetching \033[4mz4h.zsh\033[0m\n'
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsSL -- "$Z4H_URL"/z4h.zsh >"$Z4H"/z4h.zsh.$$ || return
+  elif command -v wget >/dev/null 2>&1; then
+    wget -O-   -- "$Z4H_URL"/z4h.zsh >"$Z4H"/z4h.zsh.$$ || return
+  else
+    >&2 printf '\033[33mz4h\033[0m: please install \033[32mcurl\033[0m or \033[32mwget\033[0m\n'
+    return 1
+  fi
+  mv -- "$Z4H"/z4h.zsh.$$ "$Z4H"/z4h.zsh || return
+fi
+
+. "$Z4H"/z4h.zsh || return
+
+setopt rcs
+# Personal Zsh configuration file. It is strongly recommended to keep all
+# shell customization and configuration (including exported environment
+# variables such as PATH) in this file or in files sourced from it.
+#
+# Documentation: https://github.com/romkatv/zsh4humans/blob/v5/README.md.
+
+# Periodic auto-update on Zsh startup: 'ask' or 'no'.
+# You can manually run `z4h update` to update everything.
+zstyle ':z4h:' auto-update      'no'
+# Ask whether to auto-update this often; has no effect if auto-update is 'no'.
+zstyle ':z4h:' auto-update-days '28'
+
+# Keyboard type: 'mac' or 'pc'.
+zstyle ':z4h:bindkey' keyboard  'pc'
+
+# Start tmux if not already in tmux.
+zstyle ':z4h:' start-tmux       command tmux -u new -A -D -t z4h
+
+# Mark up shell's output with semantic information.
+zstyle ':z4h:' term-shell-integration 'yes'
+
+# Right-arrow key accepts one character ('partial-accept') from
+# command autosuggestions or the whole thing ('accept')?
+zstyle ':z4h:autosuggestions' forward-char 'accept'
+
+# Recursively traverse directories when TAB-completing files.
+zstyle ':z4h:fzf-complete' recurse-dirs 'no'
+
+# Enable direnv to automatically source .envrc files.
+zstyle ':z4h:direnv'         enable 'yes'
+# Show "loading" and "unloading" notifications from direnv.
+zstyle ':z4h:direnv:success' notify 'yes'
+
+# Enable ('yes') or disable ('no') automatic teleportation of z4h over
+# SSH when connecting to these hosts.
+zstyle ':z4h:ssh:example-hostname1'   enable 'yes'
+zstyle ':z4h:ssh:*.example-hostname2' enable 'no'
+# The default value if none of the overrides above match the hostname.
+zstyle ':z4h:ssh:*'                   enable 'no'
+
+# Send these files over to the remote host when connecting over SSH to the
+# enabled hosts.
+zstyle ':z4h:ssh:*' send-extra-files '~/.nanorc' '~/.env.zsh'
+
+# Clone additional Git repositories from GitHub.
+#
+# This doesn't do anything apart from cloning the repository and keeping it
+# up-to-date. Cloned files can be used after `z4h init`. This is just an
+# example. If you don't plan to use Oh My Zsh, delete this line.
+# z4h install ohmyzsh/ohmyzsh || return
+
+# Install or update core components (fzf, zsh-autosuggestions, etc.) and
+# initialize Zsh. After this point console I/O is unavailable until Zsh
+# is fully initialized. Everything that requires user interaction or can
+# perform network I/O must be done above. Everything else is best done below.
+z4h init || return
+
+# Extend PATH.
+path=(~/bin $path)
+
+# Export environment variables.
+export GPG_TTY=$TTY
+
+# Source additional local files if they exist.
+z4h source ~/.env.zsh
+
+# Use additional Git repositories pulled in with `z4h install`.
+#
+# This is just an example that you should delete. It does nothing useful.
+# z4h source ohmyzsh/ohmyzsh/lib/diagnostics.zsh  # source an individual file
+# z4h load   ohmyzsh/ohmyzsh/plugins/emoji-clock  # load a plugin
+
+# Define key bindings.
+z4h bindkey z4h-backward-kill-word  Ctrl+Backspace     Ctrl+H
+z4h bindkey z4h-backward-kill-zword Ctrl+Alt+Backspace
+
+z4h bindkey undo Ctrl+/ Shift+Tab  # undo the last command line change
+z4h bindkey redo Alt+/             # redo the last undone command line change
+
+z4h bindkey z4h-cd-back    Alt+Left   # cd into the previous directory
+z4h bindkey z4h-cd-forward Alt+Right  # cd into the next directory
+z4h bindkey z4h-cd-up      Alt+Up     # cd into the parent directory
+z4h bindkey z4h-cd-down    Alt+Down   # cd into a child directory
+
+# Autoload functions.
+autoload -Uz zmv
+
+# Define functions and completions.
+function md() { [[ $# == 1 ]] && mkdir -p -- "$1" && cd -- "$1" }
+compdef _directories md
+
+# Define named directories: ~w <=> Windows home directory on WSL.
+[[ -z $z4h_win_home ]] || hash -d w=$z4h_win_home
+
+# Define aliases.
+alias tree='tree -a -I .git'
+
+# Add flags to existing aliases.
+alias ls="${aliases[ls]:-ls} -A"
+
+# Set shell options: http://zsh.sourceforge.net/Doc/Release/Options.html.
+setopt glob_dots     # no special treatment for file names with a leading dot
+setopt no_auto_menu  # require an extra TAB press to open the completion menu
