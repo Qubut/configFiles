@@ -156,3 +156,8 @@ nvim/
 .gsd-keyboard.settings-ported
 QtProject.conf
 QtProject.conf
+autostart/i3.desktop
+autostart/pam_kwallet_init.desktop
+autostart/pamac-tray.desktop
+autostart/xfce-polkit.desktop
+NuGet
