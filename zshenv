@@ -72,4 +72,13 @@ export PYTHONPYCACHEPREFIX="$XDG_CACHE_HOME/python"
 export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export PATH="$PATH:~/.local/share/pyenv/versions/"
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-
+export STACK_XDG=1
+export DOT_SAGE="$XDG_CONFIG_HOME"/sage
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export TEXMFHOME=$XDG_DATA_HOME/texmf
+export TEXMFVAR=$XDG_CACHE_HOME/texlive/texmf-var
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+alias nvidia-settings='nvidia-settings --config="$XDG_CONFIG_HOME"/nvidia/settings'
+export TERMINFO="$XDG_DATA_HOME"/terminfo
+export TERMINFO_DIRS="$XDG_DATA_HOME"/terminfo:/usr/share/terminfo 
+export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
